@@ -1,0 +1,597 @@
+2017-11-03 09:57:35 [*]: 'Controller "site" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-03 10:00:04 [*]: 'Controller "user" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-03 10:00:23 [*]: 'route not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 342 
+2017-11-03 10:00:28 [*]: 'Controller "user" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-03 10:01:58 [*]: 'Controller "user" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-03 10:35:04 [*]: 'Method "index" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 319 
+2017-11-03 10:36:05 [*]: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in file /apps/dat/web/working/miework/vendor/framework/database/DbManager.php on line 179 
+2017-11-03 10:36:51 [*]: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in file /apps/dat/web/working/miework/vendor/framework/database/DbManager.php on line 179 
+2017-11-03 14:14:03 [*]: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'fernando' for key 'user_name_uindex'' in file /apps/dat/web/working/miework/vendor/framework/database/DbManager.php on line 179 
+2017-11-03 17:36:59 [*]: 'Fetal error: Class 'app\api\controller\IndexController' not found' in file /apps/dat/web/working/miework/app/index/controllers/userController.php on line 13 
+2017-11-03 17:38:33 [*]: 'Fetal error: Class 'app\api\controller\IndexController' not found' in file /apps/dat/web/working/miework/app/index/controllers/userController.php on line 13 
+2017-11-03 17:39:13 [*]: 'Fetal error: Class 'app\api\controller\IndexController' not found' in file /apps/dat/web/working/miework/app/index/controllers/userController.php on line 13 
+2017-11-03 17:39:31 [*]: 'Fetal error: Class 'app\api\controller\base\Structure' not found' in file /apps/dat/web/working/miework/app/api/controllers/CommonController.php on line 39 
+2017-11-03 17:40:15 [*]: 'Fetal error: Class 'app\api\controller\base\Structure' not found' in file /apps/dat/web/working/miework/app/api/controllers/CommonController.php on line 39 
+2017-11-03 18:09:56 [*]: 'Type error: Argument 1 passed to vendor\framework\http\Response\Json::__construct() must be of the type array, object given, called in /apps/dat/web/working/miework/vendor/framework/http/Response.php on line 85' in file /apps/dat/web/working/miework/vendor/framework/http/Response/Json.php on line 38 
+2017-11-03 18:10:29 [*]: 'Object of class app\api\controllers\base\BaseRequest could not be converted to string' in file /apps/dat/web/working/miework/app/api/controllers/CommonController.php on line 43 
+2017-11-03 18:32:11 [*]: 'Fetal error: Class 'validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 89 
+2017-11-03 18:33:49 [*]: 'Fetal error: Class 'validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 89 
+2017-11-04 09:32:07 [*]: 'Controller "index" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-04 09:33:30 [*]: 'Controller "index" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-04 09:34:43 [*]: 'Controller "index" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 484 
+2017-11-04 09:38:00 [*]: 'Method "" not found' in file /apps/dat/web/working/miework/vendor/framework/route/Router.php on line 319 
+2017-11-04 09:40:17 [*]: 'Fetal error: Call to undefined function app\api\controllers\config()' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 242 
+2017-11-04 09:44:58 [*]: 'constant(): Couldn't find constant DESCRIPTION_STATUS_NOSTATUS' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 249 
+2017-11-04 13:49:56 [*]: 'Fetal error: Class 'app\api\controllers\UserRequest' not found' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 33 
+2017-11-04 13:54:36 [*]: 'Constant STATUS_SUCCESS already defined' in file /apps/dat/web/working/miework/config/status_config.php on line 13 
+2017-11-04 14:13:19 [*]: 'Undefined index: methods' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 72 
+2017-11-04 14:14:17 [*]: 'Undefined index: methods' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 72 
+2017-11-04 14:15:34 [*]: 'Undefined index: methods' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 72 
+2017-11-04 14:15:59 [*]: 'Undefined index: methods' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 72 
+2017-11-04 15:04:43 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:06:29 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:06:50 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:06:58 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:07:04 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:08:15 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:08:36 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:09:35 [*]: 'Trait 'app\api\controller\traits\Validate' not found' in file /apps/dat/web/working/miework/app/api/controllers/BaseController.php on line 16 
+2017-11-04 15:17:45 [*]: 'method_exists() expects parameter 2 to be string, array given' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 164 
+2017-11-04 15:18:32 [*]: 'method_exists() expects parameter 2 to be string, array given' in file /apps/dat/web/working/miework/app/api/controllers/ApiController.php on line 167 
+2017-11-04 15:20:21 [*]: 'Fetal error: Class 'app\api\controller\request\UserRequest' not found' in file /apps/dat/web/working/miework/app/api/controllers/UserController.php on line 13 
+2017-11-04 15:24:10 [*]: 'Fetal error: Class 'app\api\models\User' not found' in file /apps/dat/web/working/miework/app/api/controller/TableController.php on line 22 
+2017-11-04 15:24:25 [*]: 'Fetal error: Class 'app\api\models\User' not found' in file /apps/dat/web/working/miework/app/api/controller/TableController.php on line 22 
+2017-11-04 15:24:54 [*]: 'Array to string conversion' in file /apps/dat/web/working/miework/vendor/framework/mvc/Model.php on line 760 
+2017-11-04 15:25:38 [*]: 'Array to string conversion' in file /apps/dat/web/working/miework/vendor/framework/mvc/Model.php on line 760 
+2017-11-04 15:25:54 [*]: 'Array to string conversion' in file /apps/dat/web/working/miework/vendor/framework/mvc/Model.php on line 760 
+2017-11-04 15:26:00 [*]: 'Array to string conversion' in file /apps/dat/web/working/miework/vendor/framework/mvc/Model.php on line 760 
+2017-11-04 15:27:27 [*]: 'Type error: Argument 1 passed to vendor\framework\http\Response\Json::__construct() must be of the type array, object given, called in /apps/dat/web/working/miework/vendor/framework/http/Response.php on line 85' in file /apps/dat/web/working/miework/vendor/framework/http/Response/Json.php on line 38 
+2017-11-04 15:37:36 [*]: 'Undefined index: msg' in file /apps/dat/web/working/miework/app/api/controller/ApiController.php on line 97 
+2017-11-04 15:55:49 [*]: 'Array to string conversion' in file /apps/dat/web/working/miework/app/api/controller/ApiController.php on line 308 
+2017-11-04 15:56:45 [*]: 'Array to string conversion' in file /apps/dat/web/working/miework/app/api/controller/ApiController.php on line 308 
+2017-11-04 16:13:46 [*]: 'Object of class stdClass could not be converted to string' in file /apps/dat/web/working/miework/vendor/framework/mvc/Model.php on line 760 
+2017-11-04 16:17:04 [*]: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'fernando' for key 'user_name_uindex'' in file /apps/dat/web/working/miework/vendor/framework/database/DbManager.php on line 179 
+2017-11-04 16:31:24 [*]: 'Parse error: syntax error, unexpected ';', expecting ',' or ')'' in file /apps/dat/web/working/miework/app/api/controller/indexController.php on line 36 
+2017-11-08 09:39:13 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/route/Router.php on line 298 
+2017-11-08 09:39:35 [*]: 'Fetal error: Class 'HttpRequest' not found' in file /apps/dat/web/working/myBlog/app/api/controller/UserController.php on line 40 
+2017-11-08 09:46:09 [*]: 'Fetal error: Class 'HttpRequest' not found' in file /apps/dat/web/working/myBlog/app/api/controller/UserController.php on line 40 
+2017-11-14 09:58:08 [*]: 'Fetal error: Class 'HttpRequest' not found' in file /apps/dat/web/working/myBlog/app/api/controller/UserController.php on line 40 
+2017-11-14 10:25:18 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/route/Router.php on line 298 
+2017-11-14 10:25:50 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/route/Router.php on line 298 
+2017-11-17 09:36:30 [*]: 'Undefined index: CONTENT_TYPE' in file E:\wamp\www\myBlog\vendor\framework\http\Request.php on line 128 
+2017-11-17 09:36:37 [*]: 'Undefined index: CONTENT_TYPE' in file E:\wamp\www\myBlog\vendor\framework\http\Request.php on line 128 
+2017-11-17 09:42:34 [*]: 'Controller "userInfo" not found' in file E:\wamp\www\myBlog\vendor\framework\route\Router.php on line 298 
+2017-11-17 09:42:53 [*]: 'Controller "index" not found' in file E:\wamp\www\myBlog\vendor\framework\route\Router.php on line 298 
+2017-11-17 09:43:29 [*]: 'Controller "index" not found' in file E:\wamp\www\myBlog\vendor\framework\route\Router.php on line 298 
+2017-11-17 09:43:30 [*]: 'Controller "index" not found' in file E:\wamp\www\myBlog\vendor\framework\route\Router.php on line 298 
+2017-11-17 09:48:44 [*]: 'Controller "user" not found' in file E:\wamp\www\myBlog\vendor\framework\route\Router.php on line 298 
+2017-11-17 09:48:55 [*]: 'Controller "index" not found' in file E:\wamp\www\myBlog\vendor\framework\route\Router.php on line 298 
+2017-11-17 10:13:10 [*]: 'Undefined property: stdClass::$query' in file /apps/dat/web/working/myBlog/app/api/controller/ApiController.php on line 223 
+2017-11-17 10:18:30 [*]: 'Undefined property: stdClass::$query' in file /apps/dat/web/working/myBlog/app/api/controller/ApiController.php on line 223 
+2017-11-17 10:19:33 [*]: 'Undefined property: stdClass::$query' in file /apps/dat/web/working/myBlog/app/api/controller/ApiController.php on line 223 
+2017-11-17 10:19:43 [*]: 'Undefined property: stdClass::$query' in file /apps/dat/web/working/myBlog/app/api/controller/ApiController.php on line 223 
+2017-11-17 10:58:59 [*]: 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in file E:\wamp\www\myBlog\vendor\framework\database\Connection.php on line 73 
+2017-11-17 11:31:40 [*]: 'Fetal error: Call to undefined method vendor\framework\route\Route::head()' in file /apps/dat/web/working/myBlog/routes/api.php on line 9 
+2017-11-17 11:32:48 [*]: 'Fetal error: Call to undefined method vendor\framework\route\Route::head()' in file /apps/dat/web/working/myBlog/routes/api.php on line 9 
+2017-11-17 11:39:13 [*]: 'Fetal error: Call to undefined method vendor\framework\route\Route::head()' in file /apps/dat/web/working/myBlog/routes/api.php on line 9 
+2017-11-17 11:39:20 [*]: 'Fetal error: Call to undefined method vendor\framework\route\Route::head()' in file /apps/dat/web/working/myBlog/routes/api.php on line 9 
+2017-11-17 11:46:47 [*]: 'Fetal error: Call to undefined method vendor\framework\route\Route::head()' in file /apps/dat/web/working/myBlog/routes/api.php on line 9 
+2017-11-17 11:54:13 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 11:55:02 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 11:55:54 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 11:56:06 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 11:56:59 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 11:57:10 [*]: 'Undefined variable: key' in file /apps/dat/web/working/myBlog/vendor/framework/mvc/Model.php on line 686 
+2017-11-17 11:58:45 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 11:59:11 [*]: 'Fetal error: Wrong parameters for vendor\framework\exception\DatabaseException([string $message [, long $code [, Throwable $previous = NULL]]])' in file /apps/dat/web/working/myBlog/vendor/framework/exception/DatabaseException.php on line 16 
+2017-11-17 17:33:46 [*]: 'Controller "apps" not found' in file /apps/dat/web/working/myBlog/vendor/framework/route/Router.php on line 298 
+2017-11-18 10:32:34 [*]: 'Controller "api" not found' in file /apps/dat/web/working/myBlog/vendor/framework/route/Router.php on line 298 
+2017-11-18 10:34:01 [*]: 'Class 'app\api\controller\TableController' not found' in file /apps/dat/web/working/myBlog/app/api/controller/Base.php on line 14 
+2017-11-18 11:09:22 [*]: 'Trying to get property of non-object' in file /apps/dat/web/working/myBlog/app/api/controller/User.php on line 24 
+2018-01-30 11:40:35 [*]: 'Fetal error: Class 'vendor\framework\route\Route' not found' in file /apps/dat/web/working/myBlog/routes/api.php , [class] , [method]  ' on line 5 
+2018-01-30 11:41:15 [*]: 'Fetal error: Class 'vendor\framework\route\Route' not found' in file /apps/dat/web/working/myBlog/routes/index.php , [class] , [method]  ' on line 5 
+2018-01-30 11:41:23 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/Router.php , [class] Emilia\route\Router, [method] classExists ' on line 300 
+2018-02-08 16:04:33 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/Router.php , [class] Emilia\route\Router, [method] classExists ' on line 300 
+2018-02-08 16:13:05 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/Router.php , [class] Emilia\route\Router, [method] classExists ' on line 300 
+2018-02-08 16:13:06 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/Router.php , [class] Emilia\route\Router, [method] classExists ' on line 300 
+2018-02-08 16:13:06 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/Router.php , [class] Emilia\route\Router, [method] classExists ' on line 300 
+2018-02-08 16:13:21 [*]: 'system runtime : 0.051814' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 16:16:00 [*]: 'system runtime : 0.041331' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 16:16:17 [*]: 'Controller "site" not found' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/Router.php , [class] Emilia\route\Router, [method] classExists ' on line 300 
+2018-02-08 16:16:35 [*]: 'system runtime : 0.028922' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 16:45:48 [*]: 'addslashes() expects exactly 1 parameter, 2 given' in file /apps/dat/web/working/myBlog/vendor/framework/src/http/Request.php , [class] , [method] addslashes ' on line 807 
+2018-02-08 16:48:20 [*]: 'addslashes() expects exactly 1 parameter, 2 given' in file /apps/dat/web/working/myBlog/vendor/framework/src/http/Request.php , [class] , [method] addslashes ' on line 807 
+2018-02-08 16:49:55 [*]: 'addslashes() expects exactly 1 parameter, 2 given' in file /apps/dat/web/working/myBlog/vendor/framework/src/http/Request.php , [class] , [method] addslashes ' on line 807 
+2018-02-08 16:54:06 [*]: 'Access level to Emilia\http\response\Json::getData() must be public (as in class Emilia\http\Response)' in file /apps/dat/web/working/myBlog/vendor/framework/src/http/response/Json.php , [class] Emilia\exception\Exception, [method] exceptionHandler ' on line 14 
+2018-02-08 16:59:11 [*]: 'system runtime : 0.047233' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 16:59:11 [*]: 'system runtime : 0.060351' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 16:59:36 [*]: 'system runtime : 0.047715' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 16:59:36 [*]: 'system runtime : 0.059625' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:02:08 [*]: 'addslashes() expects exactly 1 parameter, 2 given' in file /apps/dat/web/working/myBlog/vendor/framework/src/http/Request.php , [class] , [method] addslashes ' on line 807 
+2018-02-08 17:02:25 [*]: 'system runtime : 0.049488' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:02:25 [*]: 'system runtime : 0.060145' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:03:20 [*]: 'system runtime : 0.047184' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:03:20 [*]: 'system runtime : 0.059145' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:03:21 [*]: 'system runtime : 0.048651' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:03:21 [*]: 'system runtime : 0.059311' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:08:49 [*]: 'system runtime : 0.047776' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:08:49 [*]: 'system runtime : 0.059218' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:11:10 [*]: 'Fetal error: Cannot use object of type stdClass as array' in file /apps/dat/web/working/myBlog/app/api/model/Document.php , [class] app\api\model\Document, [method] getList ' on line 26 
+2018-02-08 17:12:01 [*]: 'Fetal error: Cannot use object of type stdClass as array' in file /apps/dat/web/working/myBlog/app/api/model/Document.php , [class] app\api\model\Document, [method] getList ' on line 28 
+2018-02-08 17:13:01 [*]: 'system runtime : 0.047867' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:13:01 [*]: 'system runtime : 0.058561' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:13:13 [*]: 'system runtime : 0.048004' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:13:13 [*]: 'system runtime : 0.060213' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:27:38 [*]: 'system runtime : 0.053844' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:27:38 [*]: 'system runtime : 0.065505' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:27:47 [*]: 'system runtime : 0.051013' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:27:47 [*]: 'system runtime : 0.061665' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:28:51 [*]: 'system runtime : 0.050356' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:28:51 [*]: 'system runtime : 0.062804' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:28:55 [*]: 'system runtime : 0.059112' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:28:55 [*]: 'system runtime : 0.071214' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:29:11 [*]: 'system runtime : 0.053748' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:29:11 [*]: 'system runtime : 0.066052' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:29:15 [*]: 'system runtime : 0.055364' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:29:15 [*]: 'system runtime : 0.067909' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:29:32 [*]: 'system runtime : 0.052373' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:29:32 [*]: 'system runtime : 0.064289' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:30:21 [*]: 'system runtime : 0.054619' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:30:21 [*]: 'system runtime : 0.065142' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:30:30 [*]: 'system runtime : 0.081943' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:30:30 [*]: 'system runtime : 0.092719' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:30:36 [*]: 'system runtime : 0.057201' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:30:36 [*]: 'system runtime : 0.069044' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:29 [*]: 'system runtime : 0.051766' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:29 [*]: 'system runtime : 0.062948' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:35 [*]: 'system runtime : 0.052198' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:35 [*]: 'system runtime : 0.062956' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:48 [*]: 'system runtime : 0.059180' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:48 [*]: 'system runtime : 0.069534' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:54 [*]: 'system runtime : 0.052376' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:31:54 [*]: 'system runtime : 0.063634' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:09 [*]: 'system runtime : 0.051238' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:09 [*]: 'system runtime : 0.061185' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:11 [*]: 'system runtime : 0.048649' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:11 [*]: 'system runtime : 0.059095' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:29 [*]: 'system runtime : 0.047292' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:30 [*]: 'system runtime : 0.063894' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:35 [*]: 'system runtime : 0.053390' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:35 [*]: 'system runtime : 0.064591' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:37 [*]: 'system runtime : 0.055509' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:32:37 [*]: 'system runtime : 0.066890' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:34:45 [*]: 'system runtime : 0.060636' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:34:45 [*]: 'system runtime : 0.071671' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:35:05 [*]: 'system runtime : 0.048610' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:35:05 [*]: 'system runtime : 0.060578' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:35:08 [*]: 'system runtime : 0.057928' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:35:08 [*]: 'system runtime : 0.069101' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:23 [*]: 'system runtime : 0.047758' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:23 [*]: 'system runtime : 0.058119' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:35 [*]: 'system runtime : 0.055196' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:35 [*]: 'system runtime : 0.073661' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:40 [*]: 'system runtime : 0.050166' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:40 [*]: 'system runtime : 0.060182' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:46 [*]: 'system runtime : 0.053742' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:46 [*]: 'system runtime : 0.066047' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:59 [*]: 'system runtime : 0.049610' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:36:59 [*]: 'system runtime : 0.059781' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:34 [*]: 'system runtime : 0.058137' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:34 [*]: 'system runtime : 0.069577' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:51 [*]: 'system runtime : 0.050364' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:51 [*]: 'system runtime : 0.061624' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:52 [*]: 'system runtime : 0.064474' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:52 [*]: 'system runtime : 0.076746' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:55 [*]: 'system runtime : 0.055582' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:37:55 [*]: 'system runtime : 0.065787' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:33 [*]: 'system runtime : 0.053341' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:33 [*]: 'system runtime : 0.064960' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:41 [*]: 'system runtime : 0.052385' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:41 [*]: 'system runtime : 0.065468' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:45 [*]: 'system runtime : 0.058304' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:45 [*]: 'system runtime : 0.069434' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:59 [*]: 'system runtime : 0.075238' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:38:59 [*]: 'system runtime : 0.085293' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:00 [*]: 'system runtime : 0.053456' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:00 [*]: 'system runtime : 0.064461' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:31 [*]: 'system runtime : 0.048469' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:31 [*]: 'system runtime : 0.059566' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:47 [*]: 'system runtime : 0.054117' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:47 [*]: 'system runtime : 0.065931' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:57 [*]: 'system runtime : 0.051990' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:57 [*]: 'system runtime : 0.063558' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:58 [*]: 'system runtime : 0.048405' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:39:58 [*]: 'system runtime : 0.057589' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:40:02 [*]: 'system runtime : 0.191790' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:40:02 [*]: 'system runtime : 0.226782' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:40:03 [*]: 'system runtime : 0.055660' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:40:03 [*]: 'system runtime : 0.066336' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:40:39 [*]: 'system runtime : 0.049462' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:40:39 [*]: 'system runtime : 0.060528' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:41:02 [*]: 'system runtime : 0.084042' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:41:02 [*]: 'system runtime : 0.099896' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:41:03 [*]: 'system runtime : 0.050458' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:41:03 [*]: 'system runtime : 0.060895' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:41:20 [*]: 'system runtime : 0.051198' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:41:20 [*]: 'system runtime : 0.061025' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:45:27 [*]: 'system runtime : 0.058054' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:45:27 [*]: 'system runtime : 0.068344' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:45:34 [*]: 'system runtime : 0.057849' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:45:34 [*]: 'system runtime : 0.070026' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:45:52 [*]: 'system runtime : 0.047233' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:45:52 [*]: 'system runtime : 0.058060' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:46:23 [*]: 'system runtime : 0.055417' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:46:23 [*]: 'system runtime : 0.066294' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:47:26 [*]: 'system runtime : 0.048466' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:47:26 [*]: 'system runtime : 0.059450' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:48:26 [*]: 'system runtime : 0.057176' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:48:26 [*]: 'system runtime : 0.078048' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:48:29 [*]: 'system runtime : 0.056279' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:48:29 [*]: 'system runtime : 0.067928' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:48:46 [*]: 'system runtime : 0.056290' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:48:46 [*]: 'system runtime : 0.067926' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:49:54 [*]: 'system runtime : 0.054645' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:49:54 [*]: 'system runtime : 0.065341' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:14 [*]: 'system runtime : 0.051806' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:14 [*]: 'system runtime : 0.062097' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:23 [*]: 'system runtime : 0.047209' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:23 [*]: 'system runtime : 0.058562' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:28 [*]: 'system runtime : 0.056702' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:28 [*]: 'system runtime : 0.067747' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:31 [*]: 'system runtime : 0.061219' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:31 [*]: 'system runtime : 0.072176' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:33 [*]: 'system runtime : 0.056298' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-08 17:51:33 [*]: 'system runtime : 0.067305' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:02:14 [*]: 'system runtime : 0.367741' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:02:14 [*]: 'system runtime : 0.416766' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:02:39 [*]: 'system runtime : 0.058492' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:02:39 [*]: 'system runtime : 0.070299' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:02:55 [*]: 'system runtime : 0.050565' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:02:55 [*]: 'system runtime : 0.060564' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:03:01 [*]: 'system runtime : 0.059237' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:03:01 [*]: 'system runtime : 0.071230' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:03:37 [*]: 'system runtime : 0.056530' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:03:37 [*]: 'system runtime : 0.067154' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:32 [*]: 'system runtime : 0.053860' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:32 [*]: 'system runtime : 0.064641' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:43 [*]: 'system runtime : 0.058864' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:43 [*]: 'system runtime : 0.070275' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:48 [*]: 'system runtime : 0.067029' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:48 [*]: 'system runtime : 0.079727' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:54 [*]: 'system runtime : 0.058355' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:54 [*]: 'system runtime : 0.070809' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:55 [*]: 'system runtime : 0.053792' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:55 [*]: 'system runtime : 0.065387' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:56 [*]: 'system runtime : 0.053482' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:56 [*]: 'system runtime : 0.064647' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:57 [*]: 'system runtime : 0.050600' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:57 [*]: 'system runtime : 0.062735' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:57 [*]: 'system runtime : 0.052706' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:57 [*]: 'system runtime : 0.063791' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:58 [*]: 'system runtime : 0.058174' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:58 [*]: 'system runtime : 0.068976' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:59 [*]: 'system runtime : 0.073466' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:05:59 [*]: 'system runtime : 0.083664' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:20 [*]: 'system runtime : 0.057833' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:20 [*]: 'system runtime : 0.068868' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:21 [*]: 'system runtime : 0.059365' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:21 [*]: 'system runtime : 0.071904' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:22 [*]: 'system runtime : 0.059260' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:22 [*]: 'system runtime : 0.070896' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:23 [*]: 'system runtime : 0.080197' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:23 [*]: 'system runtime : 0.091695' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:24 [*]: 'system runtime : 0.055850' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:24 [*]: 'system runtime : 0.067460' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:50 [*]: 'system runtime : 0.056971' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:06:50 [*]: 'system runtime : 0.068526' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:07:52 [*]: 'system runtime : 0.048871' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:07:52 [*]: 'system runtime : 0.058484' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:08:26 [*]: 'system runtime : 0.060941' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:08:26 [*]: 'system runtime : 0.071619' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:08:33 [*]: 'system runtime : 0.047012' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:08:33 [*]: 'system runtime : 0.058935' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:09:33 [*]: 'system runtime : 0.067097' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:09:33 [*]: 'system runtime : 0.076482' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:10:02 [*]: 'system runtime : 0.076611' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:10:02 [*]: 'system runtime : 0.099437' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:12:41 [*]: 'system runtime : 0.056780' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:12:41 [*]: 'system runtime : 0.067769' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:13:11 [*]: 'system runtime : 0.044419' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:13:11 [*]: 'system runtime : 0.055070' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:15:00 [*]: 'system runtime : 0.066683' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:15:00 [*]: 'system runtime : 0.078735' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:15:16 [*]: 'system runtime : 0.058078' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:15:16 [*]: 'system runtime : 0.070527' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:16:37 [*]: 'system runtime : 0.047716' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:16:37 [*]: 'system runtime : 0.058868' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:18:30 [*]: 'system runtime : 0.061146' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:18:30 [*]: 'system runtime : 0.074675' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:18:51 [*]: 'system runtime : 0.050298' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:18:51 [*]: 'system runtime : 0.062454' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:19:05 [*]: 'system runtime : 0.057687' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:19:05 [*]: 'system runtime : 0.066880' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:26:56 [*]: 'system runtime : 0.057768' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:26:56 [*]: 'system runtime : 0.067970' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:27:18 [*]: 'system runtime : 0.056910' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:27:18 [*]: 'system runtime : 0.067035' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:27:32 [*]: 'system runtime : 0.056577' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:27:32 [*]: 'system runtime : 0.066540' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:28:49 [*]: 'system runtime : 0.054935' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:28:49 [*]: 'system runtime : 0.065540' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:30:16 [*]: 'system runtime : 0.054505' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:30:16 [*]: 'system runtime : 0.065017' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:30:49 [*]: 'system runtime : 0.046511' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:30:49 [*]: 'system runtime : 0.055902' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:30:52 [*]: 'system runtime : 0.049779' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:30:52 [*]: 'system runtime : 0.060089' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:31:27 [*]: 'system runtime : 0.045791' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:31:27 [*]: 'system runtime : 0.055007' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:31:30 [*]: 'system runtime : 0.054721' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:31:30 [*]: 'system runtime : 0.067784' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:32:01 [*]: 'system runtime : 0.058169' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:32:01 [*]: 'system runtime : 0.068876' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:32:03 [*]: 'system runtime : 0.052072' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:32:03 [*]: 'system runtime : 0.062510' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:32:04 [*]: 'system runtime : 0.080468' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:32:04 [*]: 'system runtime : 0.090301' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:36:13 [*]: 'system runtime : 0.053249' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:36:13 [*]: 'system runtime : 0.064443' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:40:18 [*]: 'system runtime : 0.055333' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:40:18 [*]: 'system runtime : 0.064480' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:40:22 [*]: 'system runtime : 0.048300' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:40:22 [*]: 'system runtime : 0.058523' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:40:31 [*]: 'system runtime : 0.056296' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:40:31 [*]: 'system runtime : 0.067206' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:41:56 [*]: 'system runtime : 0.055204' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:41:56 [*]: 'system runtime : 0.065128' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:42:13 [*]: 'system runtime : 0.046664' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:42:13 [*]: 'system runtime : 0.058130' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:42:15 [*]: 'system runtime : 0.058671' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:42:15 [*]: 'system runtime : 0.068996' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:46:39 [*]: 'system runtime : 0.049801' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:46:39 [*]: 'system runtime : 0.061081' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:47:36 [*]: 'system runtime : 0.055359' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:47:36 [*]: 'system runtime : 0.067265' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:51:57 [*]: 'system runtime : 0.043244' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:51:57 [*]: 'system runtime : 0.052584' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:52:04 [*]: 'system runtime : 0.056481' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:52:04 [*]: 'system runtime : 0.069530' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:03 [*]: 'system runtime : 0.055830' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:03 [*]: 'system runtime : 0.066546' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:13 [*]: 'system runtime : 0.059054' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:13 [*]: 'system runtime : 0.071698' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:24 [*]: 'system runtime : 0.053659' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:24 [*]: 'system runtime : 0.064011' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:30 [*]: 'system runtime : 0.055935' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:53:30 [*]: 'system runtime : 0.066759' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:06 [*]: 'system runtime : 0.051817' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:06 [*]: 'system runtime : 0.075413' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:10 [*]: 'system runtime : 0.054266' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:10 [*]: 'system runtime : 0.065103' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:13 [*]: 'system runtime : 0.054279' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:13 [*]: 'system runtime : 0.064235' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:28 [*]: 'system runtime : 0.047027' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:28 [*]: 'system runtime : 0.056882' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:30 [*]: 'system runtime : 0.057300' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:30 [*]: 'system runtime : 0.068396' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:33 [*]: 'system runtime : 0.055537' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:54:33 [*]: 'system runtime : 0.066422' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:56:40 [*]: 'system runtime : 0.054087' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:56:40 [*]: 'system runtime : 0.064661' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:58:02 [*]: 'system runtime : 0.181348' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:58:02 [*]: 'system runtime : 0.211505' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:59:55 [*]: 'system runtime : 0.057632' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 10:59:55 [*]: 'system runtime : 0.067912' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:00:48 [*]: 'system runtime : 0.056505' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:00:48 [*]: 'system runtime : 0.068188' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:19 [*]: 'system runtime : 0.058594' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:19 [*]: 'system runtime : 0.069540' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:24 [*]: 'system runtime : 0.056412' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:24 [*]: 'system runtime : 0.067690' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:35 [*]: 'system runtime : 0.056710' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:35 [*]: 'system runtime : 0.068543' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:38 [*]: 'system runtime : 0.058853' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:01:38 [*]: 'system runtime : 0.069535' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:02:06 [*]: 'system runtime : 0.055730' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:02:06 [*]: 'system runtime : 0.066439' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:02:53 [*]: 'system runtime : 0.056933' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:02:53 [*]: 'system runtime : 0.067536' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:07:44 [*]: 'system runtime : 0.063742' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:07:44 [*]: 'system runtime : 0.073559' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:23:39 [*]: 'system runtime : 0.058969' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:23:39 [*]: 'system runtime : 0.070605' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:26:53 [*]: 'system runtime : 0.052547' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:26:53 [*]: 'system runtime : 0.064878' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:28:48 [*]: 'system runtime : 0.057631' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:28:48 [*]: 'system runtime : 0.068694' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:41:15 [*]: 'system runtime : 0.056715' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:41:15 [*]: 'system runtime : 0.066856' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:42:14 [*]: 'system runtime : 0.057158' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:42:14 [*]: 'system runtime : 0.067910' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:44:39 [*]: 'system runtime : 0.054975' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:44:39 [*]: 'system runtime : 0.065129' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:51:25 [*]: 'system runtime : 0.061352' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:51:25 [*]: 'system runtime : 0.073011' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:53:15 [*]: 'system runtime : 0.068160' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:53:15 [*]: 'system runtime : 0.079748' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:53:45 [*]: 'system runtime : 0.056829' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:53:45 [*]: 'system runtime : 0.067377' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:59:07 [*]: 'system runtime : 0.053393' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 11:59:07 [*]: 'system runtime : 0.063250' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 12:01:14 [*]: 'system runtime : 0.064559' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 12:01:14 [*]: 'system runtime : 0.075913' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 12:02:33 [*]: 'system runtime : 0.055344' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 12:02:33 [*]: 'system runtime : 0.066270' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:39:33 [*]: 'system runtime : 0.054211' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:39:33 [*]: 'system runtime : 0.064826' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:41:45 [*]: 'system runtime : 0.050894' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:41:45 [*]: 'system runtime : 0.061754' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:42:26 [*]: 'system runtime : 0.062678' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:42:26 [*]: 'system runtime : 0.073592' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:43:48 [*]: 'system runtime : 0.054593' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:43:48 [*]: 'system runtime : 0.065121' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:44:42 [*]: 'system runtime : 0.052998' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:44:42 [*]: 'system runtime : 0.064069' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:46:09 [*]: 'system runtime : 0.056404' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:46:09 [*]: 'system runtime : 0.067242' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:46:50 [*]: 'system runtime : 0.056844' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:46:50 [*]: 'system runtime : 0.066549' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:47:12 [*]: 'system runtime : 0.056562' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:47:12 [*]: 'system runtime : 0.068102' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:49:16 [*]: 'system runtime : 0.054261' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:49:16 [*]: 'system runtime : 0.064642' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:50:57 [*]: 'system runtime : 0.054407' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:50:57 [*]: 'system runtime : 0.065122' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:51:06 [*]: 'system runtime : 0.059253' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:51:06 [*]: 'system runtime : 0.070845' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:52:34 [*]: 'system runtime : 0.047043' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:52:34 [*]: 'system runtime : 0.072229' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:52:47 [*]: 'system runtime : 0.046999' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:52:47 [*]: 'system runtime : 0.056924' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:53:16 [*]: 'system runtime : 0.065331' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:53:16 [*]: 'system runtime : 0.074872' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:54:16 [*]: 'system runtime : 0.057538' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 13:54:16 [*]: 'system runtime : 0.068890' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:23:37 [*]: 'system runtime : 0.054180' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:23:37 [*]: 'system runtime : 0.065831' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:46:40 [*]: 'system runtime : 0.059541' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:46:40 [*]: 'system runtime : 0.070735' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:46:52 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:47:40 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:47:49 [*]: 'system runtime : 0.026335' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:48:14 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:48:35 [*]: 'system runtime : 0.058798' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:48:35 [*]: 'system runtime : 0.068716' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:48:54 [*]: 'system runtime : 0.053438' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:48:54 [*]: 'system runtime : 0.063960' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:49:02 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:50:53 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:51:13 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:51:23 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:51:34 [*]: 'system runtime : 0.060001' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:51:34 [*]: 'system runtime : 0.071032' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:00 [*]: 'system runtime : 0.036756' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:00 [*]: 'system runtime : 0.046776' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:02 [*]: 'system runtime : 0.157831' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:02 [*]: 'system runtime : 0.188656' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:17 [*]: 'system runtime : 0.047355' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:17 [*]: 'system runtime : 0.059573' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:21 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:54:52 [*]: 'system runtime : 0.051010' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:54:52 [*]: 'system runtime : 0.061263' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:57:32 [*]: 'system runtime : 0.053262' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:57:32 [*]: 'system runtime : 0.064446' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:57:34 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 16:57:56 [*]: 'system runtime : 0.058780' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:57:56 [*]: 'system runtime : 0.068759' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:59:50 [*]: 'system runtime : 0.054993' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:59:50 [*]: 'system runtime : 0.066639' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 16:59:53 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 17:01:38 [*]: 'system runtime : 0.038929' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:38 [*]: 'system runtime : 0.049709' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:40 [*]: 'system runtime : 0.037421' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:40 [*]: 'system runtime : 0.047613' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:40 [*]: 'system runtime : 0.048838' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:40 [*]: 'system runtime : 0.050223' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:40 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:01:43 [*]: 'system runtime : 0.045913' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:43 [*]: 'system runtime : 0.056661' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:43 [*]: 'system runtime : 0.058865' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:43 [*]: 'system runtime : 0.060785' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:01:43 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:02:10 [*]: 'system runtime : 0.056703' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:10 [*]: 'system runtime : 0.069040' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:46 [*]: 'system runtime : 0.067340' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:46 [*]: 'system runtime : 0.082508' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:48 [*]: 'system runtime : 0.037588' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:48 [*]: 'system runtime : 0.051844' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:48 [*]: 'system runtime : 0.053434' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:48 [*]: 'system runtime : 0.055785' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:02:48 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:03:12 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 17:04:13 [*]: 'system runtime : 0.059211' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:04:13 [*]: 'system runtime : 0.069382' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:04:15 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 17:06:52 [*]: 'system runtime : 0.059094' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:06:52 [*]: 'system runtime : 0.070091' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:06:54 [*]: 'system runtime : 0.044416' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:06:54 [*]: 'system runtime : 0.057409' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:06:54 [*]: 'system runtime : 0.059030' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:06:54 [*]: 'system runtime : 0.060876' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:06:54 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:08:58 [*]: 'system runtime : 0.058815' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:08:58 [*]: 'system runtime : 0.069632' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:08:59 [*]: 'system runtime : 0.037459' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:08:59 [*]: 'system runtime : 0.050837' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:08:59 [*]: 'system runtime : 0.057584' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:08:59 [*]: 'system runtime : 0.059502' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:08:59 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:10:36 [*]: 'system runtime : 0.055954' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:10:36 [*]: 'system runtime : 0.067121' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:10:39 [*]: 'system runtime : 0.040843' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:10:39 [*]: 'system runtime : 0.055227' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:10:39 [*]: 'system runtime : 0.057487' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:10:39 [*]: 'system runtime : 0.059703' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:10:39 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:11:49 [*]: 'system runtime : 0.061352' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:11:49 [*]: 'system runtime : 0.071072' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:21:10 [*]: 'system runtime : 0.055366' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:21:10 [*]: 'system runtime : 0.066250' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:21:22 [*]: 'system runtime : 0.060144' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:21:22 [*]: 'system runtime : 0.071713' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:24:01 [*]: 'system runtime : 0.192532' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:24:01 [*]: 'system runtime : 0.225717' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:27:05 [*]: 'system runtime : 0.053244' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:27:05 [*]: 'system runtime : 0.063893' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:35 [*]: 'system runtime : 0.055561' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:35 [*]: 'system runtime : 0.067461' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:45 [*]: 'system runtime : 0.057920' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:45 [*]: 'system runtime : 0.067607' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:52 [*]: 'system runtime : 0.047103' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:53 [*]: 'system runtime : 0.058547' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:53 [*]: 'system runtime : 0.060119' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:53 [*]: 'system runtime : 0.062029' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:29:53 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:30:34 [*]: 'system runtime : 0.038565' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:32:36 [*]: 'system runtime : 0.040223' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:32:36 [*]: 'system runtime : 0.052131' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:32:36 [*]: 'system runtime : 0.053437' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:32:36 [*]: 'system runtime : 0.054713' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:32:36 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:36:17 [*]: 'system runtime : 0.055127' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:36:17 [*]: 'system runtime : 0.065787' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:36:22 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 17:45:43 [*]: 'system runtime : 0.053752' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:45:43 [*]: 'system runtime : 0.065815' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:46:43 [*]: 'system runtime : 0.057402' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:46:43 [*]: 'system runtime : 0.068737' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:47:51 [*]: 'system runtime : 0.055859' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:47:51 [*]: 'system runtime : 0.065597' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:48:05 [*]: 'system runtime : 0.055985' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:48:05 [*]: 'system runtime : 0.065973' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:48:12 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 17:55:37 [*]: 'system runtime : 0.057850' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:55:37 [*]: 'system runtime : 0.068995' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:55:43 [*]: 'system runtime : 0.037776' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:55:43 [*]: 'system runtime : 0.046809' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:55:43 [*]: 'system runtime : 0.048216' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:55:43 [*]: 'system runtime : 0.049248' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:55:43 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 17:58:07 [*]: 'system runtime : 0.062224' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:58:07 [*]: 'system runtime : 0.074656' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:58:14 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 17:59:15 [*]: 'system runtime : 0.051987' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:59:15 [*]: 'system runtime : 0.062033' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 17:59:21 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 18:00:01 [*]: 'Undefined index: options' in file /apps/dat/web/working/myBlog/vendor/framework/src/route/RouteContainer.php , [class] Emilia\route\RouteContainer, [method] lookUpDictionary ' on line 309 
+2018-02-09 18:00:25 [*]: 'system runtime : 0.037377' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:00:25 [*]: 'system runtime : 0.050838' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:00:25 [*]: 'system runtime : 0.053316' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:00:25 [*]: 'system runtime : 0.056177' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:00:25 [*]: 'Undefined variable: obj' in file /apps/dat/web/working/myBlog/app/api/controller/index.php , [class] app\api\controller\Index, [method] index ' on line 45 
+2018-02-09 18:01:36 [*]: 'system runtime : 0.063531' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:01:36 [*]: 'system runtime : 0.075312' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:04:48 [*]: 'system runtime : 0.055272' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:04:48 [*]: 'system runtime : 0.065210' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:04:51 [*]: 'system runtime : 0.074488' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
+2018-02-09 18:04:52 [*]: 'system runtime : 0.089818' in file /apps/dat/web/working/myBlog/vendor/framework/src/foundation/Hook.php , [class] Emilia\Hook, [method] runtime ' on line 30 
