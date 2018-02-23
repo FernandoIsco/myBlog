@@ -9,15 +9,27 @@
 namespace app\api\controller;
 
 
+use app\api\controller\request\DocumentRequest;
+
 class Document extends Api
 {
+    public function __construct()
+    {
+        $this->myRequest = new DocumentRequest();
+        parent::__construct();
+    }
+
     public function info()
     {
         return $this->getDocumentModel()->getList();
     }
 
-    public function add()
+    public function edit()
     {
-        $this->getDocumentModel()->add();
+        $request  = $this->getApiRequest();
+
+        $this->getDocumentModel()->edit(array('content' => $request->value, 'render' => $request->render), array('id' => $request->id));
+
+        return STATUS_SUCCESS;
     }
 }

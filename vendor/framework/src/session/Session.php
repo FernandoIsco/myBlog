@@ -51,7 +51,7 @@ class Session
 
             $handlerName = __NAMESPACE__ . '\\handlers\\' . ucfirst($config['type']) . 'SessionHandler';
 
-            session_set_save_handler(new $handlerName());
+            class_exists($handlerName) && session_set_save_handler(new $handlerName());
 
             // see: http://php.net/manual/zh/function.session-set-save-handler.php
             if (PHP_VERSION_ID >= 50400) {

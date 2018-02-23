@@ -19,9 +19,7 @@ class UserLogin extends Api
 
         $userInfo = $this->getUserModel()->login($request->name, $request->password);
 
-        echo '<pre>';
-        print_r($userInfo);
-        die;
+        return $userInfo ? $userInfo : STATUS_USER_NOT_EXISTS;
     }
 
     public function logout()

@@ -76,7 +76,7 @@ class Response
      *
      * @return object|static
      */
-    public static function instance($data, $options = array(), $code = 200, array $header = array())
+    public static function instance($data = '', $options = array(), $code = 200, array $header = array())
     {
         if (class_exists($class = get_called_class())) {
             self::$instance = new $class($data, $options, $code, $header);
@@ -135,6 +135,19 @@ class Response
     public function getData()
     {
         return $this->data;
+    }
+
+    /**
+     * 头部信息设置
+     *
+     * @param string $key
+     * @param string $value
+     * @return $this
+     */
+    public function header($key, $value)
+    {
+        $this->header[$key] = $value;
+        return $this;
     }
 
     /**

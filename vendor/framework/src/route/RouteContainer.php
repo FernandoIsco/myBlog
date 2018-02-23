@@ -306,13 +306,13 @@ class RouteContainer
      */
     public function lookUpDictionary($method, $route = '')
     {
+        if (empty($this->allRoute[$method]) || empty($this->dictionary[$method])) {
+            return array();
+        }
+
         $findResult = $this->allRoute[$method];
 
         $methodDirectories = $this->dictionary[$method];
-
-        if (empty($findResult) || empty($methodDirectories)) {
-            return $findResult;
-        }
 
         if ($route) {
             $routes = explode('/', trim($route, '/'));

@@ -33,8 +33,8 @@ class Document extends Model
         return array_values($return);
     }
 
-    public function add()
+    public function edit($data, $where)
     {
-
+        return $this->data($data)->where($where)->update();
     }
 }

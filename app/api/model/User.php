@@ -36,7 +36,7 @@ class User extends Model
     {
         $userInfo = $this->getRow(array('name' => $name));
 
-        if (!empty($userInfo) && $userInfo['admin'] && $userInfo['password'] == $password) {
+        if (!empty($userInfo) && $userInfo->admin && $userInfo->password == $password) {
             return $userInfo;
         }
 

@@ -9,6 +9,7 @@
 namespace Emilia\mvc;
 
 
+use Emilia\config\Config;
 use Emilia\http\Request;
 use Emilia\http\Response;
 use \Emilia\http\response\View as ViewResponse;
@@ -78,13 +79,14 @@ class Controller
      *
      * @author lzl
      *
-     * @param array $data 数组
+     * @param array $data   数组
+     * @param array $header 头部信息
      *
      * @return Response
      */
-    public function json($data)
+    public function json($data, $header = array())
     {
-        return JsonResponse::instance($data);
+        return JsonResponse::instance($data, array(), 200, $header);
     }
 
     /**

@@ -150,4 +150,30 @@ return [
             'last_modify' => 'last_modify'
         ),
     ),
+
+    /*
+    |--------------------------------------------------------------------------
+    | cors cross-origin resource sharing
+    |--------------------------------------------------------------------------
+    |
+    | 参数：
+    | origin  string  源
+    | methods string  允许请求方法
+    | headers string  头部
+    | expire  int     会话过期时间。默认86400秒
+    |
+    */
+    'CORS' => array(
+        // Access-Control-Allow-Origin
+        'Access-Control-Allow-Origin' => '*',
+
+        // Access-Control-Allow-Methods
+        'Access-Control-Allow-Methods' => 'HEAD, GET, POST, PUT, DELETE, PATCH, DELETE, OPTIONS',
+
+        // Access-Control-Allow-Headers
+        'Access-Control-Allow-Headers' => 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With, Token',
+
+        // Access-Control-Max-Age
+        // 'expire' => 86400
+    )
 ];

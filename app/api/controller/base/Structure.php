@@ -51,15 +51,5 @@ class Structure extends Item
             ]
         );
         $this->setOption('filter', $filter);
-
-        // 不同请求方式对应不同的方法
-        $methods = array(
-            'get' => 'info',
-            'head' => 'all',
-            'post' => 'add',
-            'put' => 'edit',
-            'delete' => 'remove'
-        );
-        $this->setOption('methods', $methods);
     }
 }

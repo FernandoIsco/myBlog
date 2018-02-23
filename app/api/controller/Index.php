@@ -3,11 +3,21 @@
 namespace app\api\controller;
 
 
+
+
+use Emilia\config\Config;
+
 class Index extends Api
 {
-    public function index($query = [])
+    public function index($query = array())
     {
-        header("Access-Control-Allow-Origin: *");
+        // TODO 源应该以数组形式配置
+        $cors = Config::getConfig('CORS');
+        if ($cors) {
+            foreach ($cors as $key => $item) {
+                header($key . ': ' . $item);
+            }
+        }
 
         $myQuery = $query;
         if (!$query) {
@@ -16,9 +26,15 @@ class Index extends Api
                     $myQuery = $this->request->fromGet();
                     break;
                 case 'post':
+                    $postQuery = $this->request->fromPost();
+                    $ajaxQuery = $this->request->fromAjax();
+                    $myQuery = array_merge((array)$postQuery, (array)$ajaxQuery);
+                    break;
                 case 'put':
+                    $myQuery = $this->request->fromPut();
+                    break;
                 case 'delete':
-                    $myQuery = $this->request->fromAjax();
+                    $myQuery = $this->request->fromDelete();
                     break;
             }
         }
@@ -29,15 +45,18 @@ class Index extends Api
 
         $request = $this->setApiRequest($myQuery)->getApiStructure();
 
+        $obj = null;
+        $action = '';
         $className = isset($request->namespace) ? $this->getNamespace() . $request->namespace : '';
 
         if (class_exists($className)) {
             $obj = new $className();
+            $obj->setApiRequest($myQuery);
         } else {
             $this->setApiResponse(STATUS_NO_PROTOCOL);
         }
 
-        if (!($action = $this->getRequestAction())) {
+        if (is_object($obj) && !($action = $obj->getRequestAction())) {
             $this->setApiResponse(STATUS_ERROR_REQUEST_METHOD);
         }
 

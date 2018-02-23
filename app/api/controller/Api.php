@@ -71,7 +71,7 @@ class Api extends Base
 
         $option = $tmpStructure->getOption();
 
-        if (!$structureName && isset($option['methods'])) {
+        if (strtolower($structureName) == 'query' && isset($option['methods'])) {
             $this->requestAction = $option['methods'][$this->getMethod()];
         }
 
@@ -267,7 +267,7 @@ class Api extends Base
             }
             switch ($key) {
                 case 'status':
-                    $response["$tmp_key"] = $value;
+                    $response["$tmp_key"] = intval($value);
                     break;
                 case 'description':
                     $response["$tmp_key"] = $value ? $value : $this->getDescription($this->myResponse->status, '', $param);

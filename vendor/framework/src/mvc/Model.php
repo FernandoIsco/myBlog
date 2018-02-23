@@ -59,7 +59,7 @@ abstract class Model
     {
         self::$db->setTable($this->table, 'main');
 
-        !empty($this->alias) && self::$db->setAlias($this->alias);
+        !empty($this->alias) && self::$db->setAlias($this->alias); // TODO 这里有bug，先调用setTable再调用setAlias会有问题
 
         return call_user_func_array(array(self::$db, $name), $arguments);
     }
