@@ -568,7 +568,8 @@ class Request
     public function fromAjax($name = '', $default = '', $filters = [])
     {
         $parameters = array();
-        if ($this->getContentType() == 'application/json') {
+
+        if ($this->isAjax()) {
             $parameters = json_decode($this->input, true);
         }
 
@@ -629,13 +630,10 @@ class Request
     public function fromPut($name = '', $default = '', $filters = [])
     {
         $parameters = array();
-        switch ($this->getContentType()) {
-            case 'application/x-www-form-urlencoded':
-                parse_str($this->input, $parameters);
-                break;
-            case 'application/json':
-                $parameters = json_decode($this->input, true);
-                break;
+        if ($this->isAjax()) {
+            $parameters = json_decode($this->input, true);
+        } else {
+            parse_str($this->input, $parameters); // TODO
         }
 
         $this->initParameters($parameters);
@@ -658,13 +656,10 @@ class Request
     public function fromDelete($name = '', $default = '', $filters = [])
     {
         $parameters = array();
-        switch ($this->getContentType()) {
-            case 'application/x-www-form-urlencoded':
-                parse_str($this->input, $parameters);
-                break;
-            case 'application/json':
-                $parameters = json_decode($this->input, true);
-                break;
+        if ($this->isAjax()) {
+            $parameters = json_decode($this->input, true);
+        } else {
+            parse_str($this->input, $parameters); // TODO
         }
 
         $this->initParameters($parameters);
@@ -827,5 +822,15 @@ class Request
         }
 
         $this->session->start();
+    }
+
+    /**
+     * 判断是否是异步请求
+     *
+     * @return bool
+     */
+    public function isAjax()
+    {
+        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' ? true : false;
     }
 }

@@ -9,7 +9,6 @@
 namespace Emilia\mvc;
 
 
-use Emilia\config\Config;
 use Emilia\http\Request;
 use Emilia\http\Response;
 use \Emilia\http\response\View as ViewResponse;

@@ -3,21 +3,22 @@
 namespace app\api\controller;
 
 
-
-
 use Emilia\config\Config;
 
 class Index extends Api
 {
     public function index($query = array())
     {
-        // TODO 源应该以数组形式配置
-        $cors = Config::getConfig('CORS');
-        if ($cors) {
-            foreach ($cors as $key => $item) {
-                header($key . ': ' . $item);
-            }
+        $cors = Config::getConfig('cors');
+
+        $origin = '';
+        if (in_array('*', $cors['origins']) || in_array($_SERVER['HTTP_ORIGIN'], $cors['origins'])) {
+            $origin = $_SERVER['HTTP_ORIGIN'];
         }
+
+        header('Access-Control-Allow-Origin: '  . $origin);
+        header('Access-Control-Allow-Methods: ' . implode(', ', $cors['methods']));
+        header('Access-Control-Allow-Headers: ' . implode(', ', $cors['headers']));
 
         $myQuery = $query;
         if (!$query) {
@@ -26,15 +27,19 @@ class Index extends Api
                     $myQuery = $this->request->fromGet();
                     break;
                 case 'post':
-                    $postQuery = $this->request->fromPost();
-                    $ajaxQuery = $this->request->fromAjax();
-                    $myQuery = array_merge((array)$postQuery, (array)$ajaxQuery);
-                    break;
                 case 'put':
-                    $myQuery = $this->request->fromPut();
-                    break;
                 case 'delete':
-                    $myQuery = $this->request->fromDelete();
+                    $myQuery = $this->request->fromAjax();
+
+                    // ps: post,put,delete方式请求:
+                    // 1. content_type以form-urlencoded形式提交
+                    //    1)post 以$_POST接收参数
+                    //    2)put,delete  parse_str($this->input, $parameters);
+                    // 2. content_type以application/json形式提交
+                    //    1)post,put,delete json_decode($this->input, true);
+                    break;
+                case 'options':
+                    $this->setApiResponse(STATUS_SUCCESS);
                     break;
             }
         }
@@ -61,8 +66,15 @@ class Index extends Api
         }
 
         $res = STATUS_NO_REQUEST_ACTION;
-        if (in_array($action, get_class_methods($obj))) {
-            $res = $obj->setApiRequest($myQuery)->$action();
+        try {
+            if (in_array($action, get_class_methods($obj))) {
+                $res = $obj->$action();
+            }
+        } catch (\Exception $exception) {
+            $res = array(
+                'status' => $exception->getCode(),
+                'description' => $exception->getMessage()
+            );
         }
 
         $this->setApiResponse($res);

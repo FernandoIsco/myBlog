@@ -9,11 +9,10 @@
 namespace app\api\model;
 
 
-use Emilia\mvc\Model;
 
-class Document extends Model
+class Document extends BaseModel
 {
-    public function getList($where = array(), $field = array())
+    public function getDocuments($where = array(), $field = array())
     {
         $data = $this->order(array('parent_id' => 'asc'))->select($where, $field);
 

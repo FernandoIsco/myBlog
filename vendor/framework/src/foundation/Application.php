@@ -37,13 +37,8 @@ class Application
         // 注册异常处理
         Exception::bootstrap(self::environment());
 
-        $request = $request ?: Request::instance();
-
-        // 跨域检测
-        $cors = Config::getConfig('CORS');
-        if ($request->getMethod() == 'options') return Response::instance('', array(), 200, $cors); // TODO 了解下laravel和thinkphp是怎么做的
-
         // 路由解析
+        $request = $request ?: Request::instance();
         $response = (new Router($request))->resolveRoute();
 
         // 如果指向闭包，直接返回

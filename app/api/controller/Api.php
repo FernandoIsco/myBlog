@@ -27,6 +27,8 @@ class Api extends Base
 
     protected $requestAction;
 
+    protected $models;
+
     public function __construct()
     {
         parent::__construct();
@@ -285,6 +287,7 @@ class Api extends Base
         }
 
         $this->json($response)->output();
+        die;
     }
 
     /**
@@ -321,5 +324,25 @@ class Api extends Base
         }
 
         return $description;
+    }
+
+    /**
+     * 获取模型
+     * @param string $model 模型名称
+     * @return mixed
+     */
+    public function getModel($model)
+    {
+        $model = ucfirst($model);
+        if (empty($this->models[$model])) {
+            $class = 'app\api\model\\' .$model;
+            if (!class_exists($class)) {
+                $this->setApiResponse(STATUS_SERVICE_ERROR);
+            }
+
+            $this->models[$model] = new $class($this->request);
+        }
+
+        return $this->models[$model];
     }
 }

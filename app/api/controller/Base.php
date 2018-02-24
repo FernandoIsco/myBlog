@@ -10,8 +10,9 @@ namespace app\api\controller;
 
 
 use app\api\controller\traits\Validate;
+use Emilia\mvc\Controller;
 
-class Base extends Table
+class Base extends Controller
 {
     use Validate;
 

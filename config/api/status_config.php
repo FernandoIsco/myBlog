@@ -126,3 +126,7 @@ define('REAL_DESCRIPTION_9002', '有重大更新，请更新客户端。');
 define('STATUS_NO_REQUEST_ACTION', '9003');
 define('DESCRIPTION_9003', '请求方法不存在');
 define('REAL_DESCRIPTION_9003', '有重大更新，请更新客户端。');
+/** 请求方法不存在 @var 9004 */
+define('STATUS_SERVICE_ERROR', '9004');
+define('DESCRIPTION_9004', '服务器错误');
+define('REAL_DESCRIPTION_9004', '有重大更新，请更新客户端。');

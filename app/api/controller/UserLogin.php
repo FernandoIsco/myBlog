@@ -17,7 +17,7 @@ class UserLogin extends Api
     {
         $request = $this->getApiRequest();
 
-        $userInfo = $this->getUserModel()->login($request->name, $request->password);
+        $userInfo = $this->getModel('user')->login($request->name, $request->password);
 
         return $userInfo ? $userInfo : STATUS_USER_NOT_EXISTS;
     }
@@ -27,7 +27,7 @@ class UserLogin extends Api
         $request = $this->getApiRequest();
         $response = $this->getApiResponse();
 
-        $info = $this->getUserModel()->getRow(array('name' => $request->name), array('id'));
+        $info = $this->getModel('user')->getRow(array('name' => $request->name), array('id'));
 
         if ($info) {
             return STATUS_USER_EXISTS;
@@ -40,7 +40,7 @@ class UserLogin extends Api
         );
 
         try {
-            $response->id = $this->getUserModel()->add($param);
+            $response->id = $this->getModel('user')->add($param);
         } catch (\Exception $e) {
             $response->status = $e->getCode();
             $response->description = $e->getMessage();

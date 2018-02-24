@@ -22,11 +22,11 @@ class User extends Api
         $columns = array('id', 'name', 'comments', 'favorable', 'image');
 
         if ($whereRequest->id) {
-            $info = $this->getUserModel()->getRow(array('id' => $whereRequest->id), $columns);
+            $info = $this->getModel('user')->getRow(array('id' => $whereRequest->id), $columns);
 
             return array('userInfo' => $info);
         } else {
-            $list = $this->getUserModel()->getList(array('admin|neq' => '1'), $columns);
+            $list = $this->getModel('user')->getList(array('admin|neq' => '1'), $columns);
 
             return array('userList' => $list);
         }
@@ -37,7 +37,7 @@ class User extends Api
         $request = $this->getApiRequest();
         $response = $this->getApiResponse();
 
-        $info = $this->getUserModel()->getRow(array('name' => $request->name), array('id'));
+        $info = $this->getModel('user')->getRow(array('name' => $request->name), array('id'));
 
         if ($info) {
             return STATUS_USER_EXISTS;
@@ -50,7 +50,7 @@ class User extends Api
         );
 
         try {
-            $response->id = $this->getUserModel()->add($param);
+            $response->id = $this->getModel('user')->add($param);
         } catch (\Exception $e) {
             $response->status = $e->getCode();
             $response->description = $e->getMessage();
@@ -74,7 +74,7 @@ class User extends Api
 
         try {
             if ($param) {
-                $this->getUserModel()->edit($param, $where);
+                $this->getModel('user')->edit($param, $where);
             }
 
             $response->status =  STATUS_SUCCESS;

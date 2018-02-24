@@ -21,14 +21,14 @@ class Document extends Api
 
     public function info()
     {
-        return $this->getDocumentModel()->getList();
+        return $this->getModel('document')->getDocuments();
     }
 
     public function edit()
     {
-        $request  = $this->getApiRequest();
+        $request = $this->getApiRequest();
 
-        $this->getDocumentModel()->edit(array('content' => $request->value, 'render' => $request->render), array('id' => $request->id));
+        $this->getModel('document')->edit(array('content' => $request->value, 'render' => $request->render), array('id' => $request->id));
 
         return STATUS_SUCCESS;
     }
