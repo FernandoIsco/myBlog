@@ -23,6 +23,7 @@ trait Token
         's' => 'session',
         'i' => 'identity',
         'sr' => 'source',
+        'si' => 'sign',
         't' => 'lastTimestamp',
         'q' => 'query'
     );
@@ -41,28 +42,22 @@ trait Token
             $params = (array) $request;
         }
 
-        if (empty($params['sign'])) {
+        $tmpParams = array();
+        foreach ($params as $key => $value) {
+            isset($this->common[$key]) && $tmpParams[$this->common[$key]] = $value;
+        }
+
+        if (empty($tmpParams['sign'])) {
             return false;
         }
 
-        if (empty($params['identity'])) {
+        if (empty($tmpParams['identity'])) {
             return false;
         }
 
-        $tmpParams = array_intersect_key($params, array_flip($this->common));
-
-        if (empty($tmpParams)) {
-            return false;
-        }
-
-        $arr = array();
-        foreach ($tmpParams as $key => $value) {
-            $k = array_search($key, $this->common);
-            $arr[$k] = $value;
-        }
-
-        $this->identity = $params['identity'];
-        return $params['sign'] == $this->getSign($arr);
+        $this->identity = $tmpParams['identity'];
+        unset($params[array_search('sign', $this->common)]);
+        return $tmpParams['sign'] == $this->getSign($params);
     }
 
     /**
@@ -74,7 +69,7 @@ trait Token
     public function getSign($params)
     {
         $keys = Config::getConfig('keys');
-
+        file_put_contents('./token.txt', $this->assemble($params). "\r\n", FILE_APPEND);
         return strtoupper(md5($this->assemble($params) . $keys[$this->identity]));
     }
 

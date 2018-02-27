@@ -51,13 +51,13 @@ class Index extends Api
             $this->setApiResponse(STATUS_NODATA);
         }
 
-        $request = $this->setApiRequest($myQuery)->getApiStructure();
-
         // 身份校验
-        $validateFlag = $this->validateToken($request);
+        $validateFlag = $this->validateToken($myQuery);
         if (!$validateFlag) {
             $this->setApiResponse(STATUS_MD5);
         }
+
+        $request = $this->setApiRequest($myQuery)->getApiStructure();
 
         $obj = null;
         $action = '';
