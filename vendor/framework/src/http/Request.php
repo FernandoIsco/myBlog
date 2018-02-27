@@ -734,7 +734,7 @@ class Request
 
         $val = $name ? ($this->parameters[$name] ?: $default) : $this->parameters;
 
-        if ($val === '') return $default;
+        if ($val === '' || $val === array()) return $default;
 
         is_string($filters) && $filters = explode(',', $filters);
 
@@ -799,11 +799,11 @@ class Request
         if (!function_exists($filter)) return false;
 
         if (is_array($value)) {
-            foreach ($value as $val) {
-                $this->filterValue($val, $filter);
+            foreach ($value as $key => $val) {
+                $this->filterValue($val, $filter); // TODO 这里似乎有问题
             }
         } else {
-            $value = $filter($value);
+            $value = $filter($value); // TODO 这里似乎有问题
         }
 
         return true;

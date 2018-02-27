@@ -324,7 +324,7 @@ class RouteContainer
 
                 $temp = [];
                 foreach ($methodDirectories[$position] as $key => $item) {
-                    if (strpos($key, '{') !== false || strpos($key, '}') !== false || $key == $node) {
+                    if (strpos($key, '{') !== false || strpos($key, '}') !== false || ($key == $node && $route == $item)) {
                         $temp = array_merge($temp, $item);
                     }
                 }

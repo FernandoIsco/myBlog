@@ -35,8 +35,5 @@ class BaseRequest extends Item
             'delete' => 'remove'
         );
         $this->setOption('methods', $methods);
-
-        $this->table = new BaseTableRequest();
-        $this->where = new BaseWhereRequest();
     }
 }

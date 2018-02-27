@@ -20,6 +20,7 @@ class Token extends BaseModel
         }
 
         $tokenInfo = $this->getRow(array('token' => $token));
+
         if (empty($tokenInfo)) {
             $this->add(array('token' => $token, 'last_modify' => time(), 'create_at' => time()));
         } else {

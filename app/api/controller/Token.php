@@ -21,9 +21,7 @@ class Token extends Api
 
     public function setToken()
     {
-        $request = $this->getApiRequest();
-
-        $token = $this->getModel('token')->setToken($request->token);
+        $token = $this->getModel('token')->setToken($this->getSession());
 
         return array('token' => $token);
     }

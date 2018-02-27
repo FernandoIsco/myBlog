@@ -11,9 +11,11 @@ class Index extends Api
     {
         $cors = Config::getConfig('cors');
 
+        $http_origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+
         $origin = '';
-        if (in_array('*', $cors['origins']) || in_array($_SERVER['HTTP_ORIGIN'], $cors['origins'])) {
-            $origin = $_SERVER['HTTP_ORIGIN'];
+        if (in_array('*', $cors['origins']) || (in_array($http_origin, $cors['origins']))) {
+            $origin = $http_origin ?: '*';
         }
 
         header('Access-Control-Allow-Origin: '  . $origin);
@@ -25,6 +27,7 @@ class Index extends Api
             switch ($this->getMethod()) {
                 case 'get':
                     $myQuery = $this->request->fromGet();
+                    $myQuery = json_decode($myQuery['query'], true); // 或者直接使用$_GET，不做过滤
                     break;
                 case 'post':
                 case 'put':
@@ -49,6 +52,12 @@ class Index extends Api
         }
 
         $request = $this->setApiRequest($myQuery)->getApiStructure();
+
+        // 身份校验
+        $validateFlag = $this->validateToken($request);
+        if (!$validateFlag) {
+            $this->setApiResponse(STATUS_MD5);
+        }
 
         $obj = null;
         $action = '';

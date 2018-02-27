@@ -115,10 +115,13 @@ class Router implements \Iterator
             }
 
             $defaults = $this->getDefaults($route);
-            if (!empty($defaults)) {
-                $this->setDefaults($defaults);
-            } elseif (isset($modules['defaultsAction'][$this->getModule()])) {
-                $this->setDefaults($modules['defaultsAction'][$this->getModule()]);
+            $defaultAction = Config::getConfig('defaultsAction');
+            if ($this->getModule()) {
+                $this->setDefaults(
+                    isset($modules['defaultsAction'][$this->getModule()]) ? $modules['defaultsAction'][$this->getModule()] : $defaultAction
+                );
+            } else {
+                $this->setDefaults(!empty($defaults) ? $defaults : $defaultAction);
             }
 
             $this->init()->check();
@@ -368,14 +371,14 @@ class Router implements \Iterator
 
             array_map(function ($routeNode, $uriNode) use (&$parameters, $patterns) {
                 if (false !== $patternPos = strpos($routeNode, '{')) {
-                    preg_match('/{(.*)}/', $routeNode, $match);
+                    preg_match('/{(.*)}/', $routeNode, $matchNode);
 
-                    if (!empty($match[1])) {
+                    if (!empty($matchNode[1])) {
                         if (false !== $pos = strpos($uriNode, '.')) {
                             $uriNode = substr($uriNode, $patternPos, $pos - $patternPos);
                         }
 
-                        array_key_exists($match[1], $patterns) && $parameters[$match[1]] = $uriNode;
+                        array_key_exists($matchNode[1], $patterns) && $parameters[$matchNode[1]] = $uriNode;
                     }
                 }
             }, array_slice(explode('/', $route), $this->position), explode('/', $uri));

@@ -11,12 +11,17 @@ namespace app\api\controller;
 
 use app\api\controller\base\BaseRequest;
 use app\api\controller\base\BaseResponse;
+use app\api\controller\base\BaseTableRequest;
+use app\api\controller\base\BaseWhereRequest;
 use app\api\controller\base\Structure;
+use app\api\controller\traits\token as TokenValidate;
 use Emilia\Application;
 
 
 class Api extends Base
 {
+    use TokenValidate;
+
     private $structure = null;  //结构体
 
     protected $myRequest = '';  //我的请求结构体
@@ -66,6 +71,14 @@ class Api extends Base
         if ($structureName && isset($this->structure->$structureName)) {
             $tmpStructure = $this->structure->$structureName;
         } elseif ($structureName && isset($this->structure->query->$structureName)) {
+            switch ($structureName) {
+                case 'table':
+                    $this->structure->query->table = new BaseTableRequest();
+                    break;
+                case 'where':
+                    $this->structure->query->where = new BaseWhereRequest();
+                    break;
+            }
             $tmpStructure = $this->structure->query->$structureName;
         } else {
             $tmpStructure = $this->structure;
@@ -86,8 +99,16 @@ class Api extends Base
             }
 
             if (is_object($item)) {
-                $subRequest = isset($request->$requestKey) ? $request->$requestKey : new \stdClass();
-                $tmpRequest->$key = $this->parseRequest($subRequest, $key);
+                switch ($key) {
+                    case 'query':
+                        $subRequest = isset($request->$requestKey) ? $request->$requestKey : new \stdClass();
+                        $tmpRequest->$key = $this->parseRequest($subRequest, $key);
+                        break;
+                    case 'table':
+                    case 'where':
+                        isset($request->$requestKey) && $tmpRequest->$key = $this->parseRequest($request->$requestKey, $key); // TODO where和table对象在安全校验下还是会有问题
+                        break;
+                }
             } else {
                 $requestValue = !empty($request->$requestKey) ? $request->$requestKey : '';
 
@@ -118,7 +139,8 @@ class Api extends Base
                 $requestValue = $this->dealFunction($requestValue, $functions);
 
                 // 默认值
-                $tmpRequest->$key = $requestValue ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
+                $requestValue = $requestValue !== '' ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
+                $requestValue !== '' && $tmpRequest->$key = $requestValue;
             }
         }
 
@@ -132,7 +154,7 @@ class Api extends Base
      */
     public function setApiRequest($query)
     {
-        $this->myRequest = $this->parseRequest($this->parseObject($query));
+        $this->structure = $this->parseRequest($this->parseObject($query));
 
         return $this;
     }
@@ -208,39 +230,69 @@ class Api extends Base
     }
 
     /**
-     * 返回完整结构体
+     * 获取完整结构体
      * @return string
      */
     public function getApiStructure()
     {
-        return $this->myRequest;
+        return $this->structure;
     }
 
     /**
-     * 返回请求结构体
+     * 获取请求结构体
      * @return mixed
      */
     public function getApiRequest()
     {
-        return $this->myRequest->query;
+        return $this->structure->query;
     }
 
     /**
-     * 返回table结构体
+     * 获取table结构体
      * @return mixed
      */
     public function getApiTableRequest()
     {
-        return $this->myRequest->query->table;
+        return isset($this->structure->query->table) ? $this->myRequest->query->table : null;
     }
 
     /**
-     * 返回where结构体
+     * 获取where结构体
      * @return mixed
      */
     public function getApiWhereRequest()
     {
-        return $this->myRequest->query->where;
+        return isset($this->structure->query->where) ? $this->myRequest->query->where : null;
+    }
+
+    /**
+     * 获取session
+     *
+     * @return mixed
+     */
+    public function getSession()
+    {
+        return $this->structure->session;
+    }
+
+    /**
+     * 获取来源
+     *
+     * @return mixed
+     */
+    public function getSource()
+    {
+        return $this->structure->source;
+    }
+
+    /**
+     * 获取请求者身份
+     *
+     * @return mixed
+     */
+    public function getIdentity()
+    {
+        return $this->structure->identity;
     }
 
     /**
@@ -250,18 +302,20 @@ class Api extends Base
      */
     public function setApiResponse($response = null, $param = array())
     {
-        $this->myResponse = $this->getApiResponse();
-        if (($response instanceof BaseResponse) || get_parent_class($this->myResponse) == 'BaseResponse' || is_array($response) || is_object($response)) {
+        $myResponse = $this->getApiResponse();
+        if ($response instanceof BaseResponse || get_parent_class($response) == 'BaseResponse') {
+            $myResponse = $response;
+        } elseif (is_array($response) || is_object($response)) {
             foreach ($response as $key => $value) {
-                $this->myResponse->$key = $value;
+                $myResponse->$key = $value;
             }
         } elseif (is_string($response) || is_int($response)) {
-            $this->myResponse->status = $response;
+            $myResponse->status = $response;
         }
 
-        $response = array();
-        $option = $this->myResponse->getOption('key');
-        foreach ($this->myResponse as $key => $value) {
+        $res = array();
+        $option = $myResponse->getOption('key');
+        foreach ($myResponse as $key => $value) {
             if (isset($option[$key])) {
                 $tmp_key = $option[$key];
             } else {
@@ -269,24 +323,22 @@ class Api extends Base
             }
             switch ($key) {
                 case 'status':
-                    $response["$tmp_key"] = intval($value);
+                    $res["$tmp_key"] = intval($value);
                     break;
                 case 'description':
-                    $response["$tmp_key"] = $value ? $value : $this->getDescription($this->myResponse->status, '', $param);
+                    $res["$tmp_key"] = $value ? $value : $this->getDescription($this->myResponse->status, '', $param);
                     break;
                 case 'timestamp':
                 case 'total' :
                 case 'id':
-                    if ($value !== '') {
-                        $response['result']["$tmp_key"] = $value;
-                    }
+                    if ($value !== '') $res['result']["$tmp_key"] = $value;
                     break;
                 default :
-                    $response['result']["$tmp_key"] = $value;
+                    $res['result']["$tmp_key"] = $value;
             }
         }
 
-        $this->json($response)->output();
+        $this->json($res)->output();
         die;
     }
 

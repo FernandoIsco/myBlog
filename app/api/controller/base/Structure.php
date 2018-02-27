@@ -17,7 +17,11 @@ class Structure extends Item
 
     public $lastTimestamp;
 
-    public $md5;
+    public $sign;
+
+    public $identity;
+
+    public $source;
 
     public $method;
 
@@ -30,13 +34,15 @@ class Structure extends Item
             'namespace' => 'n',
             'session' => 's',
             'lastTimestamp' => 't',
+            'sign' => 'si',
+            'identity' => 'i',
+            'source' => 'sr',
             'query' => 'q',
         );
         $this->setOption('key', $key);
 
         // 参数默认值
         $default = array(
-            'lastTimestamp' => time(),
             'method' => 'get',
         );
         $this->setOption('default', $default);

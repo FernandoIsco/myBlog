@@ -63,7 +63,7 @@ return [
     |
     */
     'modules' => array(
-        'division' => false,
+        'division' => true,
 
         'modules' => array(
             'index', 'admin', 'api', 'wap'
@@ -76,6 +76,10 @@ return [
         'defaultsAction' => array(
             'index' => array(
                 'controller' => 'site',
+                'action' => 'index',
+            ),
+            'api' => array(
+                'controller' => 'index',
                 'action' => 'index',
             ),
         ),
