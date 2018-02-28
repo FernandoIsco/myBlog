@@ -139,8 +139,9 @@ class Api extends Base
                 $requestValue = $this->dealFunction($requestValue, $functions);
 
                 // 默认值
-                $requestValue = $requestValue !== '' ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
-                $requestValue !== '' && $tmpRequest->$key = $requestValue;
+                // $requestValue = $requestValue !== '' ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
+                // $requestValue !== '' && $tmpRequest->$key = $requestValue;
+                $tmpRequest->$key = $requestValue ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
             }
         }
 
@@ -396,5 +397,10 @@ class Api extends Base
         }
 
         return $this->models[$model];
+    }
+
+    public function checkLogin($isAdmin = false)
+    {
+        return $this->getModel('token')->checkLogin($this->getSession(), $isAdmin);
     }
 }

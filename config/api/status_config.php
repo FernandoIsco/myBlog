@@ -105,6 +105,10 @@ define('REAL_DESCRIPTION_8003', '用户名已存在');
 define('STATUS_USER_NOT_EXISTS', '8004');
 define('DESCRIPTION_8004', '用户不存在');
 define('REAL_DESCRIPTION_8004', '账号或密码错误');
+/** 用户名未登录 @var 8005 */
+define('STATUS_USER_NOT_LOGIN', '8005');
+define('DESCRIPTION_8005', '用户未登录');
+define('REAL_DESCRIPTION_8005', '用户未登录');
 
 
 /*

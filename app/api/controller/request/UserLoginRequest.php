@@ -32,7 +32,7 @@ class UserLoginRequest extends BaseRequest
                     'rule' => ['require', 'between:6,18'],
                     'msg' => [
                         'require' => STATUS_PARAMETERS_INCOMPLETE,
-                        'between' => STATUS_PARAMETERS_INCORRECT
+                        'between' => STATUS_USER_NOT_EXISTS
                     ]
                 ]
             ]
@@ -48,7 +48,7 @@ class UserLoginRequest extends BaseRequest
         // 不同请求方式对应不同的方法
         $methods = array(
             'post' => 'login',
-            'put'  => 'logout'
+            'delete'  => 'logout'
         );
         $this->setOption('methods', $methods);
     }

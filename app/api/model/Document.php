@@ -14,7 +14,7 @@ class Document extends BaseModel
 {
     public function getDocuments($where = array(), $field = array())
     {
-        $data = $this->order(array('parent_id' => 'asc'))->select($where, $field);
+        $data = $this->getList($where, $field, 0, array('parent_id' => 'asc'));
 
         $return = array();
         if ($data) {
@@ -32,8 +32,8 @@ class Document extends BaseModel
         return array_values($return);
     }
 
-    public function edit($data, $where)
+    public function updateDoc($data, $where)
     {
-        return $this->data($data)->where($where)->update();
+        return $this->edit($data, $where);
     }
 }
