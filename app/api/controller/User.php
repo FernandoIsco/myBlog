@@ -6,7 +6,7 @@ namespace app\api\controller;
 use app\api\controller\request\UserRequest;
 use app\api\controller\request\UserWhereRequest;
 
-class User extends Api
+class User extends Common
 {
     public function __construct()
     {

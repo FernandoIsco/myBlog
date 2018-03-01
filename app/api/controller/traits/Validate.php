@@ -26,7 +26,7 @@ trait Validate
         }
 
         if (!$res) {
-            return isset($msg_arr[$rule]) ? $msg_arr[$rule] : '';
+            return key_exists($rule, $msg_arr) ? $msg_arr["$rule"] : '';
         }
         return $res;
     }
@@ -133,6 +133,10 @@ trait Validate
 
     protected function checkItem($value, $rule)
     {
+        if ((is_array($value) || is_object($value)) && in_array($rule, array('accepted', 'date', 'alpha', 'alphaNum', 'alphaDash', 'chs', 'chsAlpha', 'chsAlphaNum', 'chsDash', 'activeUrl', 'float', 'number', 'integer', 'email', 'boolean'))) {
+            return false;
+        }
+
         switch ($rule) {
             case 'require':
                 // 必须

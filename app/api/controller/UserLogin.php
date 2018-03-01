@@ -5,7 +5,7 @@ namespace app\api\controller;
 
 use app\api\controller\request\UserLoginRequest;
 
-class UserLogin extends Api
+class UserLogin extends Common
 {
     public function __construct()
     {
@@ -18,14 +18,12 @@ class UserLogin extends Api
         $request = $this->getApiRequest();
 
         $userInfo = $this->getModel('user')->login($request->name, $request->password);
+        if (!$userInfo) return STATUS_USER_NOT_EXISTS;
 
         $status = $this->getModel('token')->updateUser($userInfo, $this->getSession());
+        if (!$status) return STATUS_SESSION_TIMEOUT;
 
-        if (!$status) {
-            return STATUS_SESSION_TIMEOUT;
-        }
-
-        return $userInfo ? array('userInfo' => $userInfo) : STATUS_USER_NOT_EXISTS;
+        return array('userInfo' => $userInfo);
     }
 
     public function logout()

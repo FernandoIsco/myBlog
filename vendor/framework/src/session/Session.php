@@ -52,13 +52,13 @@ class Session
             $handlerName = __NAMESPACE__ . '\\handlers\\' . ucfirst($config['type']) . 'SessionHandler';
 
             class_exists($handlerName) && session_set_save_handler(new $handlerName());
+        }
 
-            // see: http://php.net/manual/zh/function.session-set-save-handler.php
-            if (PHP_VERSION_ID >= 50400) {
-                session_register_shutdown();
-            } else {
-                register_shutdown_function('session_write_close');
-            }
+        // see: http://php.net/manual/zh/function.session-set-save-handler.php
+        if (PHP_VERSION_ID >= 50400) {
+            session_register_shutdown();
+        } else {
+            register_shutdown_function('session_write_close');
         }
     }
 

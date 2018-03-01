@@ -95,7 +95,7 @@ define('DESCRIPTION_8001', '邮箱格式不正确');
 define('REAL_DESCRIPTION_8001', '请输入正确的邮箱！');
 /** 请求参数不合法 @var 8002 */
 define('STATUS_PARAMETERS_INCORRECT', '8002');
-define('DESCRIPTION_8002', '请求参数不合法');
+define('DESCRIPTION_8002', '请求参数不合法，%s');
 define('REAL_DESCRIPTION_8002', '部分输入格式不正确，请检查后再提交！');
 /** 用户名已存在 @var 8003 */
 define('STATUS_USER_EXISTS', '8003');

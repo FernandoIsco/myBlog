@@ -36,6 +36,10 @@ trait Token
      */
     public function validateToken($request)
     {
+        if (false == Config::getConfig('sign.validate')) {
+            return true;
+        }
+
         if (is_object($request)) {
             $params = json_decode(json_encode($request), true);
         } else {
@@ -68,8 +72,8 @@ trait Token
      */
     public function getSign($params)
     {
-        $keys = Config::getConfig('keys');
-        file_put_contents('./token.txt', $this->assemble($params). "\r\n", FILE_APPEND);
+        $keys = Config::getConfig('sign.keys');
+
         return strtoupper(md5($this->assemble($params) . $keys[$this->identity]));
     }
 

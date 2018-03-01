@@ -11,7 +11,7 @@ namespace app\api\controller;
 
 use app\api\controller\request\TokenRequest;
 
-class Token extends Api
+class Token extends Common
 {
     public function __construct()
     {

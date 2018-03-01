@@ -19,6 +19,7 @@ class Document extends BaseModel
         $return = array();
         if ($data) {
             foreach ($data as $item) {
+                $item->searched = 1;
                 if (!$item->parent_id) {
                     $return[$item->id] = $item;
                 } else {

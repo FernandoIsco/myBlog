@@ -11,8 +11,6 @@ namespace app\api\controller;
 
 use app\api\controller\base\BaseRequest;
 use app\api\controller\base\BaseResponse;
-use app\api\controller\base\BaseTableRequest;
-use app\api\controller\base\BaseWhereRequest;
 use app\api\controller\base\Structure;
 use app\api\controller\traits\token as TokenValidate;
 use Emilia\Application;
@@ -71,14 +69,14 @@ class Api extends Base
         if ($structureName && isset($this->structure->$structureName)) {
             $tmpStructure = $this->structure->$structureName;
         } elseif ($structureName && isset($this->structure->query->$structureName)) {
-            switch ($structureName) {
+            /*switch ($structureName) {
                 case 'table':
                     $this->structure->query->table = new BaseTableRequest();
                     break;
                 case 'where':
                     $this->structure->query->where = new BaseWhereRequest();
                     break;
-            }
+            }*/
             $tmpStructure = $this->structure->query->$structureName;
         } else {
             $tmpStructure = $this->structure;
@@ -99,7 +97,9 @@ class Api extends Base
             }
 
             if (is_object($item)) {
-                switch ($key) {
+                $subRequest = isset($request->$requestKey) ? $request->$requestKey : new \stdClass();
+                $tmpRequest->$key = $this->parseRequest($subRequest, $key);
+                /*switch ($key) {
                     case 'query':
                         $subRequest = isset($request->$requestKey) ? $request->$requestKey : new \stdClass();
                         $tmpRequest->$key = $this->parseRequest($subRequest, $key);
@@ -108,7 +108,7 @@ class Api extends Base
                     case 'where':
                         isset($request->$requestKey) && $tmpRequest->$key = $this->parseRequest($request->$requestKey, $key); // TODO where和table对象在安全校验下还是会有问题
                         break;
-                }
+                }*/
             } else {
                 $requestValue = !empty($request->$requestKey) ? $request->$requestKey : '';
 
@@ -254,7 +254,7 @@ class Api extends Base
      */
     public function getApiTableRequest()
     {
-        return isset($this->structure->query->table) ? $this->myRequest->query->table : null;
+        return isset($this->structure->query->table) ? $this->structure->query->table : null;
     }
 
     /**
@@ -263,7 +263,7 @@ class Api extends Base
      */
     public function getApiWhereRequest()
     {
-        return isset($this->structure->query->where) ? $this->myRequest->query->where : null;
+        return isset($this->structure->query->where) ? $this->structure->query->where : null;
     }
 
     /**
@@ -377,30 +377,5 @@ class Api extends Base
         }
 
         return $description;
-    }
-
-    /**
-     * 获取模型
-     * @param string $model 模型名称
-     * @return mixed
-     */
-    public function getModel($model)
-    {
-        $model = ucfirst($model);
-        if (empty($this->models[$model])) {
-            $class = 'app\api\model\\' .$model;
-            if (!class_exists($class)) {
-                $this->setApiResponse(STATUS_SERVICE_ERROR);
-            }
-
-            $this->models[$model] = new $class($this->request);
-        }
-
-        return $this->models[$model];
-    }
-
-    public function checkLogin($isAdmin = false)
-    {
-        return $this->getModel('token')->checkLogin($this->getSession(), $isAdmin);
     }
 }

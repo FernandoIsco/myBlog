@@ -813,15 +813,16 @@ class Request
      * session会话开启
      *
      * @author lzl
-     *
+     * @param string $sessionId
+     * @param array $options
      */
-    public function sessionStart()
+    public function sessionStart($sessionId = '', $options = array())
     {
         if (!$this->session) {
             $this->session = new Session();
         }
 
-        $this->session->start();
+        $this->session->start($sessionId, $options);
     }
 
     /**

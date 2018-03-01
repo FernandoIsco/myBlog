@@ -861,7 +861,7 @@ class Query extends BaseQuery
                     case 'like':
                         $key = "{$prefix}_{$param['table']}_{$param['name']}_{$this->wherePosition}";
                         //$value = trim($this->quote($value), '%') . '%';
-                        $value = trim($value, '%') . '%';
+                        $value = '%' . trim($value, '%') . '%';
 
                         $this->bindParam($key, $value);
                         break;

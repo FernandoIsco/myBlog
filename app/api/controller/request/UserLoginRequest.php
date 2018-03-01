@@ -25,13 +25,13 @@ class UserLoginRequest extends BaseRequest
                 'name' => [
                     'rule' => ['require'],
                     'msg' => [
-                        'require' => STATUS_PARAMETERS_INCOMPLETE,
+                        'require' => STATUS_PARAMETERS_INCORRECT,
                     ],
                 ],
                 'password' => [
                     'rule' => ['require', 'between:6,18'],
                     'msg' => [
-                        'require' => STATUS_PARAMETERS_INCOMPLETE,
+                        'require' => STATUS_PARAMETERS_INCORRECT,
                         'between' => STATUS_USER_NOT_EXISTS
                     ]
                 ]

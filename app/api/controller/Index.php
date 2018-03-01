@@ -3,7 +3,9 @@
 namespace app\api\controller;
 
 
+use Emilia\Application;
 use Emilia\config\Config;
+use Emilia\log\Logger;
 
 class Index extends Api
 {
@@ -33,7 +35,6 @@ class Index extends Api
                 case 'put':
                 case 'delete':
                     $myQuery = $this->request->fromAjax();
-
                     // ps: post,put,delete方式请求:
                     // 1. content_type以form-urlencoded形式提交
                     //    1)post 以$_POST接收参数
@@ -57,33 +58,34 @@ class Index extends Api
             $this->setApiResponse(STATUS_MD5);
         }
 
-        $request = $this->setApiRequest($myQuery)->getApiStructure();
-
-        $obj = null;
-        $action = '';
-        $className = isset($request->namespace) ? $this->getNamespace() . $request->namespace : '';
-
-        if (class_exists($className)) {
-            $obj = new $className();
-            $obj->setApiRequest($myQuery);
-        } else {
-            $this->setApiResponse(STATUS_NO_PROTOCOL);
-        }
-
-        if (is_object($obj) && !($action = $obj->getRequestAction())) {
-            $this->setApiResponse(STATUS_ERROR_REQUEST_METHOD);
-        }
-
-        $res = STATUS_NO_REQUEST_ACTION;
         try {
+            // 将数据转化为apiRequest对象
+            $request = $this->setApiRequest($myQuery)->getApiStructure();
+
+            // 实例对应的类
+            $obj = null;
+            $action = '';
+            $className = isset($request->namespace) ? $this->getNamespace() . $request->namespace : '';
+            if (class_exists($className)) {
+                $obj = new $className();
+                $obj->setApiRequest($myQuery);
+            } else {
+                $this->setApiResponse(STATUS_NO_PROTOCOL);
+            }
+
+            // 判断类是否有该方法，并执行返回结果
+            if (is_object($obj) && !($action = $obj->getRequestAction())) {
+                $this->setApiResponse(STATUS_ERROR_REQUEST_METHOD);
+            }
+
+            $res = STATUS_NO_REQUEST_ACTION;
             if (in_array($action, get_class_methods($obj))) {
+                $this->request->sessionStart($request->session);
                 $res = $obj->$action();
             }
         } catch (\Exception $exception) {
-            $res = array(
-                'status' => $exception->getCode(),
-                'description' => $exception->getMessage()
-            );
+            Logger::record($exception);
+            $res = STATUS_SERVICE_ERROR;
         }
 
         $this->setApiResponse($res);
