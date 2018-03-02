@@ -37,7 +37,7 @@ class Common extends Api
                 $this->setApiResponse(STATUS_SERVICE_ERROR);
             }
 
-            $this->models[$model] = new $class($this->request);
+            $this->models[$model] = new $class($this->request, $this->getApiRequest());
         }
 
         return $this->models[$model];

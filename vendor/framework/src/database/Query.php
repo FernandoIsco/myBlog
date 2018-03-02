@@ -111,14 +111,14 @@ class Query extends BaseQuery
 
             $table = (array) $table;
 
-            $this->setAlias(current($table));
+            $this->setAlias(current($table));  // TODO, 这里设计有问题
             $table = is_int(key($table)) ? current($table) : key($table);
 
-            if ($type == 'tmp') {
+            /*if ($type == 'tmp') {*/
                 $this->table = $this->addPrefix($table);
-            } elseif ($type == 'main') {
+            /*} elseif ($type == 'main') {
                 $this->mainTable = $this->addPrefix($table);
-            }
+            }*/
         }
 
         return $this;
@@ -149,7 +149,8 @@ class Query extends BaseQuery
      */
     public function getTable()
     {
-        return $this->table ? $this->table : $this->mainTable;
+        // return $this->table ? $this->table : $this->mainTable;
+        return $this->table;
     }
 
     /**
@@ -768,8 +769,6 @@ class Query extends BaseQuery
                 $string .= "`{$param[0]}`.`{$param[1]}` in (" . implode(', ', $whereArr) . ") ";
                 break;
             case 'like':
-            case 'llike':
-            case 'rlike':
                 $string .= "`{$param[0]}`.`{$param[1]}` like :where_{$param[0]}_{$param[1]}_{$param[2]} ";
                 break;
             case 'gt':
@@ -837,7 +836,7 @@ class Query extends BaseQuery
 
         if ($prefix == 'where') {
 
-            if (!empty($keys[1]) && in_array($keys[1], array('between', 'in', 'like', 'llike', 'rlike'))) {
+            if (!empty($keys[1]) && in_array($keys[1], array('between', 'in', 'like', 'like', 'rlike'))) {
                 switch ($keys[1]) {
                     case 'between' :
                         $value = (array)$value;
@@ -864,18 +863,6 @@ class Query extends BaseQuery
                         $key = "{$prefix}_{$param['table']}_{$param['name']}_{$this->wherePosition}";
                         //$value = trim($this->quote($value), '%') . '%';
                         $value = '%' . trim($value, '%') . '%';
-
-                        $this->bindParam($key, $value);
-                        break;
-                    case 'llike':
-                        $key = "{$prefix}_{$param['table']}_{$param['name']}_{$this->wherePosition}";
-                        $value = '%' . trim($value, '%');
-
-                        $this->bindParam($key, $value);
-                        break;
-                    case 'rlike':
-                        $key = "{$prefix}_{$param['table']}_{$param['name']}_{$this->wherePosition}";
-                        $value = trim($value, '%') . '%';
 
                         $this->bindParam($key, $value);
                         break;

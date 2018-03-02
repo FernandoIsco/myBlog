@@ -14,11 +14,14 @@ use Emilia\mvc\Model;
 
 class BaseModel extends Model
 {
-    public $request;
+    protected $request;
 
-    public function __construct(Request $request)
+    protected $query;
+
+    public function __construct(Request $request, $query = null)
     {
         $this->request = $request;
+        $this->query = $query;
         parent::__construct();
     }
 
@@ -128,11 +131,14 @@ class BaseModel extends Model
      * @param array $order
      * @return array
      */
-    final function getPage($where = array(), $field = array(), $order = array(), $limit = 0, $page = 0)
+    final function getPage($where = array(), $field = array(), $order = array(), $limit = 10, $page = 0)
     {
-        $total = $this->getTotal($where);
+        $limit = !empty($this->query->table->limit) ? $this->query->table->limit : $limit;
+        $page = !empty($this->query->table->page) ? $this->query->table->page : $page;
 
         $list = $this->getList($where, $field, $order, $limit, $page);
+
+        $total = $this->getTotal($where);
 
         return array('total' => $total, 'page' => $page, 'rows' => count($list), 'list' => $list);
     }

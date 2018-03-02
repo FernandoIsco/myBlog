@@ -57,7 +57,7 @@ abstract class Model
      */
     public function __call($name, $arguments)
     {
-        self::$db->setTable($this->table, 'main');
+        !self::$db->getTable() && self::$db->setTable($this->table, 'main');
 
         !empty($this->alias) && self::$db->setAlias($this->alias);
 
