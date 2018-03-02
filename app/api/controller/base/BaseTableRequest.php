@@ -56,5 +56,11 @@ class BaseTableRequest extends Item
             ),
         );
         $this->setOption('filter', $filter);
+
+        $default = array(
+            'page' => 0,
+            'limit' => 0
+        );
+        $this->setOption('default', $default);
     }
 }

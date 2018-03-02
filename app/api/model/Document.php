@@ -12,14 +12,16 @@ namespace app\api\model;
 
 class Document extends BaseModel
 {
+    const DOC_SEARCHED = 1;
+
     public function getDocuments($where = array(), $field = array())
     {
-        $data = $this->getList($where, $field, 0, array('parent_id' => 'asc'));
+        $data = $this->getList($where, $field, array('parent_id' => 'asc'));
 
         $return = array();
         if ($data) {
             foreach ($data as $item) {
-                $item->searched = 1;
+                $item->searched = self::DOC_SEARCHED;
                 if (!$item->parent_id) {
                     $return[$item->id] = $item;
                 } else {

@@ -84,7 +84,7 @@ class BaseModel extends Model
      */
     final function getRow($where, $field = array(), $order = array())
     {
-        $list = $this->getList($where, $field, 1, $order);
+        $list = $this->getList($where, $field, $order, 1);
 
         return !empty($list) ? $list[0] : array();
     }
@@ -95,11 +95,45 @@ class BaseModel extends Model
      * @param array $where
      * @param array $field
      * @param int   $limit
+     * @param int   $page
      * @param array $order
      * @return mixed
      */
-    final function getList($where = array(), $field = array(), $limit = 0, $order = array())
+    final function getList($where = array(), $field = array(), $order = array(), $limit = 0, $page = 0)
     {
-        return $this->order($order)->limit($limit)->select($where, $field);
+        $start = bcmul($page, $limit);
+
+        return $this->order($order)->page($start, $limit)->select($where, $field);
+    }
+
+    /**
+     * 获取列表数量
+     *
+     * @author lzl
+     * @param type name
+     * @return mixed
+     */
+    final function getTotal($where)
+    {
+        return $this->where($where)->count();
+    }
+
+    /**
+     * 分页查询
+     *
+     * @param array $where
+     * @param array $field
+     * @param int   $limit
+     * @param int   $page
+     * @param array $order
+     * @return array
+     */
+    final function getPage($where = array(), $field = array(), $order = array(), $limit = 0, $page = 0)
+    {
+        $total = $this->getTotal($where);
+
+        $list = $this->getList($where, $field, $order, $limit, $page);
+
+        return array('total' => $total, 'page' => $page, 'rows' => count($list), 'list' => $list);
     }
 }

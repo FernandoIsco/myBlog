@@ -30,8 +30,6 @@ class Api extends Base
 
     protected $requestAction;
 
-    protected $models;
-
     public function __construct()
     {
         parent::__construct();
@@ -106,7 +104,7 @@ class Api extends Base
                         break;
                     case 'table':
                     case 'where':
-                        isset($request->$requestKey) && $tmpRequest->$key = $this->parseRequest($request->$requestKey, $key); // TODO where和table对象在安全校验下还是会有问题
+                        isset($request->$requestKey) && $tmpRequest->$key = $this->parseRequest($request->$requestKey, $key);
                         break;
                 }*/
             } else {
@@ -330,6 +328,8 @@ class Api extends Base
                     $res["$tmp_key"] = $value ? $value : $this->getDescription($this->myResponse->status, '', $param);
                     break;
                 case 'timestamp':
+                    $res["$tmp_key"] = intval(microtime(true) * 1000);
+                    break;
                 case 'total' :
                 case 'id':
                     if ($value !== '') $res['result']["$tmp_key"] = $value;

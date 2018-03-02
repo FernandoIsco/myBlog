@@ -21,7 +21,7 @@ class Document extends Common
 
     public function info()
     {
-        $whereRequest = $this->getApiStructure()->query->where;
+        $whereRequest = $this->getApiWhereRequest();
 
         if ($whereRequest->searchKey) {
             $fields = array('id', 'parent_id');
