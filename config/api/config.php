@@ -4,8 +4,10 @@
  */
 
 return array(
+    // 是否允许多端登录
     'multi_login' => false,
 
+    // 跨域配置
     'cors' => array(
         'origins' => array(
             '*'
@@ -18,11 +20,12 @@ return array(
         )
     ),
 
+    // 签名验证，身份配置
     'sign' => array(
         'validate' => true,
 
         'keys' => array(
             'fernando' => 'fernando'
         )
-    )
+    ),
 );

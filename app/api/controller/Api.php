@@ -12,23 +12,38 @@ namespace app\api\controller;
 use app\api\controller\base\BaseRequest;
 use app\api\controller\base\BaseResponse;
 use app\api\controller\base\Structure;
-use app\api\controller\traits\token as TokenValidate;
+use app\api\controller\traits\EncryptVerify as EncryptVerify;
 use Emilia\Application;
 
 
 class Api extends Base
 {
-    use TokenValidate;
+    use EncryptVerify;
 
-    private $structure = null;  //结构体
+    /**
+     * @var object 数据结构体
+     */
+    private $structure = null;
 
-    protected $myRequest = '';  //我的请求结构体
+    /**
+     * @var object 请求数据结构体，用于控制器使用接收参数
+     */
+    protected $myRequest = null;
 
-    protected $myResponse = ''; //返回结构体
+    /**
+     * @var object 请求条件结构体，用于控制器使用接收参数
+     */
+    protected $myWhereRequest = null;
 
-    protected $myWhereRequest = ''; //我的请求条件结构体
+    /**
+     * @var string 请求方法
+     */
+    protected $requestAction = '';
 
-    protected $requestAction;
+    /**
+     * @var object 响应结构体
+     */
+    protected $myResponse = null;
 
     public function __construct()
     {
@@ -67,14 +82,6 @@ class Api extends Base
         if ($structureName && isset($this->structure->$structureName)) {
             $tmpStructure = $this->structure->$structureName;
         } elseif ($structureName && isset($this->structure->query->$structureName)) {
-            /*switch ($structureName) {
-                case 'table':
-                    $this->structure->query->table = new BaseTableRequest();
-                    break;
-                case 'where':
-                    $this->structure->query->where = new BaseWhereRequest();
-                    break;
-            }*/
             $tmpStructure = $this->structure->query->$structureName;
         } else {
             $tmpStructure = $this->structure;
@@ -86,7 +93,7 @@ class Api extends Base
             $this->requestAction = $option['methods'][$this->getMethod()];
         }
 
-        $tmpRequest = new \stdClass();
+        // $tmpRequest = new \stdClass();
         foreach ($tmpStructure as $key => $item) {
             if (!empty($option['key'][$key])) {
                 $requestKey = $option['key'][$key];
@@ -96,20 +103,9 @@ class Api extends Base
 
             if (is_object($item)) {
                 $subRequest = isset($request->$requestKey) ? $request->$requestKey : new \stdClass();
-                $tmpRequest->$key = $this->parseRequest($subRequest, $key);
-                /*switch ($key) {
-                    case 'query':
-                        $subRequest = isset($request->$requestKey) ? $request->$requestKey : new \stdClass();
-                        $tmpRequest->$key = $this->parseRequest($subRequest, $key);
-                        break;
-                    case 'table':
-                    case 'where':
-                        isset($request->$requestKey) && $tmpRequest->$key = $this->parseRequest($request->$requestKey, $key);
-                        break;
-                }*/
+                $tmpStructure->$key = $this->parseRequest($subRequest, $key);
             } else {
                 $requestValue = !empty($request->$requestKey) ? $request->$requestKey : '';
-
                 // 获取公共过滤方法
                 $commonRules = !empty($option['filter'][$key]['rule']) ? (array)$option['filter'][$key]['rule'] : array();
                 $commonErrMsg = !empty($option['filter'][$key]['msg']) ? (array)$option['filter'][$key]['msg'] : array();
@@ -137,13 +133,11 @@ class Api extends Base
                 $requestValue = $this->dealFunction($requestValue, $functions);
 
                 // 默认值
-                // $requestValue = $requestValue !== '' ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
-                // $requestValue !== '' && $tmpRequest->$key = $requestValue;
-                $tmpRequest->$key = $requestValue ? $requestValue : $this->getDefault($option, $key); //先验证，后判断默认值
+                $tmpStructure->$key = $requestValue ? $requestValue : $this->getDefault($item); //先验证，后判断默认值
             }
         }
 
-        return $tmpRequest;
+        return $tmpStructure;
     }
 
     /**
@@ -211,13 +205,12 @@ class Api extends Base
 
     /**
      * 获取默认值
-     * @param array $option
-     * @param string $key
+     * @param string $default
      * @return mixed
      */
-    public function getDefault($option, $key)
+    public function getDefault($default)
     {
-        $default = !empty($option['default'][$key]) ? $option['default'][$key] : '';
+        // $default = !empty($option['default'][$key]) ? $option['default'][$key] : '';
 
         if (method_exists($this, $default)) {
             $default = $this->$default();

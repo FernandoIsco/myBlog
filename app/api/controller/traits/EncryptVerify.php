@@ -12,7 +12,7 @@ namespace app\api\controller\traits;
 
 use Emilia\config\Config;
 
-trait Token
+trait EncryptVerify
 {
     private $identity;
 

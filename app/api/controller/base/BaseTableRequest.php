@@ -11,24 +11,39 @@ namespace app\api\controller\base;
 
 class BaseTableRequest extends Item
 {
-    public $page;
+    /**
+     * @var int 默认分页查询第一页
+     */
+    public $page = 1;
 
-    public $limit;
+    /**
+     * @var int 默认不分页查询
+     */
+    public $limit = 0;
 
-    public $orderBy;
-
-    public $orderType;
+    /**
+     * @var array 列表排序 TODO
+     */
+    public $order;
 
     public function __construct()
     {
+        // table条件字段映射关系
         $key = array(
             'page' => 'pa',
             'limit' => 'li',
-            'orderBy' => 'ob',
-            'orderType' => 'ot',
+            'order' => 'or'
         );
         $this->setOption('key', $key);
 
+        // 参数默认值
+        /*$default = array(
+            'page' => 1,
+            'limit' => 0
+        );
+        $this->setOption('default', $default);*/
+
+        // 字段校验
         $filter = array(
             'page' => array(
                 'rule' => 'integer',
@@ -41,26 +56,8 @@ class BaseTableRequest extends Item
                 'msg' => array(
                     'integer' => STATUS_PARAMETERS_INCORRECT
                 )
-            ),
-            'orderBy' => array(
-                'rule' => 'integer',
-                'msg' => array(
-                    'integer' => STATUS_PARAMETERS_INCORRECT
-                )
-            ),
-            'orderType' => array(
-                'rule' => 'integer',
-                'msg' => array(
-                    'integer' => STATUS_PARAMETERS_INCORRECT
-                )
-            ),
+            )
         );
         $this->setOption('filter', $filter);
-
-        $default = array(
-            'page' => 0,
-            'limit' => 0
-        );
-        $this->setOption('default', $default);
     }
 }

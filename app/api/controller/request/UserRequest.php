@@ -18,7 +18,7 @@ class UserRequest extends BaseRequest
 
     public $admin;
 
-    public $ip;
+    public $ip = 'getIp';
 
     public function __construct()
     {
@@ -50,12 +50,6 @@ class UserRequest extends BaseRequest
             ],
         );
         $this->setOption('filter', $filter);
-
-        // 默认值
-        $default = array(
-            'ip' => 'getIp',
-        );
-        $this->setOption('default', $default);
 
         // 函数处理
         $function = array(

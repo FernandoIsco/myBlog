@@ -9,10 +9,20 @@
 namespace app\api\controller;
 
 
+use app\api\controller\request\BlogsRequest;
+use app\api\controller\request\where\BlogsWhereRequest;
+
 class Blogs extends Common
 {
+    public function __construct()
+    {
+        $this->myRequest = new BlogsRequest();
+        $this->myWhereRequest = new BlogsWhereRequest();
+        parent::__construct();
+    }
+
     public function info()
     {
-        return $this->getModel('blogs')->getPage();
+        return $this->getModel('blogs')->getApiPage();
     }
 }

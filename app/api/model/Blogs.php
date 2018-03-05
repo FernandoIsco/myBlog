@@ -11,4 +11,5 @@ namespace app\api\model;
 
 class Blogs extends BaseModel
 {
+    protected $alias = 'b';
 }

@@ -27,7 +27,7 @@ class Common extends Api
                 return $this->models['__base__'];
             }
 
-            return $this->models['__base__'] = new BaseModel($this->request);
+            return $this->models['__base__'] = new BaseModel($this->request, $this->getApiRequest());
         }
 
         $model = ucfirst($model);
