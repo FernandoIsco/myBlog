@@ -11,7 +11,6 @@ namespace app\api\model;
 
 use Emilia\http\Request;
 use Emilia\mvc\Model;
-use function PHPSTORM_META\type;
 
 class BaseModel extends Model
 {
@@ -88,10 +87,13 @@ class BaseModel extends Model
      * @param array $where
      * @param array $field
      * @param array $order
+     * @param array $join
      * @return array
      */
-    final public function getRow($where, $field = array(), $order = array())
+    final public function getRow($where, $field = array(), $order = array(), $join = array())
     {
+        $this->joinTable($join);
+
         $list = $this->getList($where, $field, $order, 1);
 
         return !empty($list) ? $list[0] : array();
@@ -114,7 +116,7 @@ class BaseModel extends Model
 
         $this->joinTable($join);
 
-        return $this->order($this->getOrder($order))->page($start, $limit)->select($where, $field);
+        return $this->order($order)->page($start, $limit)->select($where, $field);
     }
 
     /**
@@ -145,11 +147,11 @@ class BaseModel extends Model
      */
     final public function getPage($where = array(), $field = array(), $order = array(), $limit = self::SEARCH_LIMIT, $page = self::SEARCH_PAGE, $join = array())
     {
-        $list = $this->getList($where, $field, $order, $this->getLimit($limit), $this->getPageNum($page), $join);
+        $list = $this->getList($where, $field, $order, $limit, $page, $join);
 
         $total = $this->getTotal($where, $join);
 
-        return array('total' => $total, 'page' => $this->getPageNum($page), 'rows' => count($list), 'list' => $list);
+        return array('total' => $total, 'page' => $page, 'rows' => count($list), 'list' => $list);
     }
 
     /**
@@ -235,24 +237,26 @@ class BaseModel extends Model
      */
     public function getWhere($where = array())
     {
-        $query = $this->query->where;
-
-        $joinKey = $query->getOption('joinKey');
-
         $w = array();
-        foreach ($query as $key => $value) {
-            $key = isset($joinKey[$key]) ? $joinKey[$key] : $key;
+        if (!empty($query = $this->query->where)) {
+            $joinKey = $query->getOption('joinKey');
 
-            if (is_object($value) || is_array($value)) {
-                $value = (array)$value;
-                $opera = array_shift($value);
-                $w[$key . '|' . $opera] = count($value) == 1 ? reset($value) : array_values($value);
-            } else {
-                $w[$key] = $value;
+            foreach ($query as $key => $value) {
+                $key = isset($joinKey[$key]) ? $joinKey[$key] : $key;
+
+                if (is_object($value) || is_array($value)) {
+                    $value = (array)$value;
+                    $opera = array_shift($value);
+                    $w[$key . '|' . $opera] = count($value) == 1 ? reset($value) : array_values($value);
+                } else {
+                    ($value !== '' && $value !== NULL) && $w[$key] = $value;
+                }
             }
+
+            $w = array_merge($w, $where);
         }
 
-        return array_merge($w, $where);
+        return $w;
     }
 
     /**
@@ -268,7 +272,7 @@ class BaseModel extends Model
             return array_merge($or, $order);
         }
 
-        return array();
+        return $order;
     }
 
     /**
@@ -294,7 +298,7 @@ class BaseModel extends Model
     }
 
     /**
-     * 连表查询
+     * 获取配置填写的字段
      *
      * @param array $field
      * @return array
@@ -307,7 +311,7 @@ class BaseModel extends Model
     }
 
     /**
-     * 连表查询
+     * 获取配置填写的连表查询条件
      *
      * @param array $join
      * @return array

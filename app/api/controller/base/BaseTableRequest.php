@@ -12,12 +12,12 @@ namespace app\api\controller\base;
 class BaseTableRequest extends Item
 {
     /**
-     * @var int 默认分页查询第一页
+     * @var int 默认分页查询第一页，固定字段
      */
     public $page = 1;
 
     /**
-     * @var int 默认不分页查询
+     * @var int 默认不分页查询，固定字段
      */
     public $limit = 0;
 
@@ -35,13 +35,6 @@ class BaseTableRequest extends Item
             'order' => 'or'
         );
         $this->setOption('key', $key);
-
-        // 参数默认值
-        /*$default = array(
-            'page' => 1,
-            'limit' => 0
-        );
-        $this->setOption('default', $default);*/
 
         // 字段校验
         $filter = array(
