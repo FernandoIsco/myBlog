@@ -23,6 +23,14 @@ class Blogs extends Common
 
     public function info()
     {
+        $whereRequest = $this->getApiWhereRequest();
+
+        if (!empty($whereRequest->id)) {
+            $blog = $this->getModel('blogs')->getApiRow();
+
+            return array('blog' => $blog);
+        }
+
         return $this->getModel('blogs')->getApiPage();
     }
 }

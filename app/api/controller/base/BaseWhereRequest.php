@@ -12,6 +12,11 @@ namespace app\api\controller\base;
 class BaseWhereRequest extends Item
 {
     /**
+     * @var string 主键，预留字段
+     */
+    public $id;
+
+    /**
      * @var string 搜索关键词，预留字段
      */
     public $searchKey;

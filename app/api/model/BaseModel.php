@@ -162,12 +162,13 @@ class BaseModel extends Model
      * @param array $order
      * @return array
      */
-    final public function getApiRow($where, $field = array(), $order = array())
+    final public function getApiRow($where = array(), $field = array(), $order = array(), $join = array())
     {
         return $this->getRow(
             $this->getWhere($where),
             $this->getField($field),
-            $this->getOrder($order)
+            $this->getOrder($order),
+            $this->getJoin($join)
         );
     }
 
